@@ -11,6 +11,11 @@ rules:
       - intent: goodbye
       - action: utter_goodbye
 
+  - rule: Thank you and goodbye
+    steps:
+      - intent: thank_and_goodbye
+      - action: utter_thank_and_goodbye
+
   - rule: Say 'I am a bot' anytime the user challenges
     steps:
       - intent: bot_challenge

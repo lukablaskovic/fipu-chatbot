@@ -5,7 +5,6 @@ nlu:
     examples: |
       - dobar dan
       - bok
-      - cao
       - ej
       - ejla
       - di si
@@ -14,9 +13,22 @@ nlu:
       - pozz
       - ej bok
       - ej cao
+  - intent: goodbye
+    examples: |
+      - dovidenja
+      - cujemo se
+      - cao
+      - see ya
+      - bye
+      - bye bye
+      - pozz
 
   - intent: thank_and_goodbye
     examples: |
+      - hvala
+      - hvala ti
+      - hvala vam
+      - puno hvala
       - hvala i dovidenja
       - hvala, cujemo se
       - tnx, aj bok
@@ -33,34 +45,6 @@ nlu:
       - tnx.. see ya
       - to je to, hvala
 
-  - intent: thankyou
-    examples: |
-      - hvala
-      - tnx
-      - tnx stari
-      - hvala ti
-      - hvala vam
-      - hvala puno
-      - thanks
-      - thank you
-      - ty
-  - intent: bot_challenge
-    examples: |
-      - jesi li robot
-      - jesi ti robot
-      - si robot
-      - jesi li ti bot
-      - tko te je napravio
-      - oktud si
-      - tko si ti
-      - sto si
-      - jesi ti bot
-      - bot
-      - pricam li ja s robotom
-      - pricam li s stvarnom osobom
-      - s kime pricam?
-      - sa kime ja razgovaram
-      - pricam li s covjekom ili robotom?
   - intent: affirm
     examples: |
       - da
@@ -90,3 +74,143 @@ nlu:
       - no 
       - n
       - necu
+
+  #General questions (FIPU)
+  - intent: prijava_na_studij
+    examples: |
+      - prijava na studij
+      - prijava na fakultet
+      - odabir studija
+      - prijava studijskog smjera
+      - kako se mogu prijaviti na studij
+      - kako se odvijaju prijave na studij
+      - prijava na studij
+      - kako da zapocnem prijavu na studij
+      - kako da se prijavim na neki od studija informatike
+      - kako da zapocnem prijavu na informatiku
+      - kako da upisem studij informatike u puli?
+      - kako da upisem faks
+      - kako da se prijavim na faks
+      - kako da upisem fipu
+  - intent: pocetak_upisa
+    examples: |
+      - upisi
+      - pocetak upisa
+      - upisi na faks
+      - upisi na fakultet
+      - kada pocinju studiji na upis
+      - kada su upisi
+      - kada pocinju studiji na upis 
+      - kada su upisi na fakultet
+      - kada ce biti objavljeni rokovi za upis
+      - kada su rokovi za upis
+      - rok za upis
+      - kada pocinju upisi za studij informatike
+      - kada su upisi za faks
+  - intent: studijski_programi_fipu
+    examples: |
+      - studijski programi
+      - koji su studijski programi dostupni
+      - koji studijski programi postoje
+      - studijski programi
+      - smjerovi na fakultetu
+      - koji smjerovi su na fakultetu
+      - koji smjerovi postoje na faksu
+      - koje studijske programe mogu upisati na fakultetu
+      - kako mogu odabrati studijski smjer
+      - koji obrazovni programi postoje
+      - obrazovni programi na faksu
+      - koje studijske smjerove informatika pruza
+  - intent: prijelaz_na_studij
+    examples: |
+      - prelazak na drugi studij
+      - postupak prijelaza na drugi fakultet
+      - prijelaz na studij
+      - kako mogu prebaciti studij
+      - kako mogu prijeci na neki od studijskih programa
+      - koji je postupak prijelaza na studij
+      - kako mogu prijeci na drugi studij
+  - intent: priznavanje_ispita
+    examples: |
+      - priznavanje kolegija
+      - priznavanje predmeta
+      - oslobadanje od predmeta
+      - oslobadanje od kolegija
+      - moze li mi se priznati neki predmet
+      - priznavanje ispita s drugog fakulteta
+      - gdje mogu pronaci prijavnicu za priznavanje predmeta
+      - moze li mi se priznati kolegij
+      - gdje je prijavnica za priznavanje kolegija
+      - kako mogu pokrenuti postupak priznavanja nekog kolegija
+      - hoce li mi se priznati kolegiji s drugog faksa
+      - zanima me priznavaju li mi se predmeti s drugog fakulteta
+      - polozio sam kolegij na drugom faksu, hoce li mi se priznati?
+  - intent: prijava_zavrsnog_diplomskog
+    examples: |
+      - kako da izaberem temu zavrsnog ili diplomskog rada
+      - kako da prijavim zavrsni rad
+      - zavrsni rad
+      - diplomski rad
+      - prijava zavrsnog rada
+      - prijava diplomskog rada
+      - kako da obranim zavrsni rad
+      - kada mogu prijaviti zavrsni
+      - kada se brani diplomski
+      - di da prijavim temu iz zavrsnog rada
+      - teme iz zavrsnog rada
+      - teme za diplomski rad
+      - diplomski
+      - zavrsni
+  - intent: prijava_ispita
+    examples: |
+      - prijava ispita
+      - ispiti - prijava
+      - prijavljivanje ispita iz predmeta
+      - prijava ispita iz kolegija
+      - kako da prijavim ispit
+      - prijavljivanje ispita
+      - gdje da prijavim ispit
+      - kako mogu prijaviti ispit iz nekog kolegija
+      - kako mogu prijaviti ispite iz nekog predmeta
+      - kako da prijavim neki ispit
+      - kada mi je rok za prijavu ispita
+      - kako ide prijava ispita
+  - intent: odjava_ispita
+    examples: |
+      - odjava ispita
+      - ispiti - odjava
+      - odjava ispita iz kolegija
+      - kako da odjavim ispit iz nekog predmeta
+      - gdje mogu odjaviti ispite iz predmeta
+      - do kad se mogu odjaviti ispiti
+      - koji je rok za odjavu ispita
+      - krajnji rok za odjavu ispita
+      - kako da prekinem ispit
+      - mogu li odjaviti ispit iz kolegija
+      - kako ide odjava ispita
+
+  - intent: promjena_izbornog
+    examples: |
+      - promjena izbornog predmeta
+      - izborni predmeta promjena
+      - ne svida mi se izborni
+      - izborni kolegij promjena
+      - kako da promjenim izborni predmet
+      - mogu li naknadno promjeniti izborni kolegij
+  - intent: bot_challenge
+    examples: |
+      - jesi li robot
+      - jesi ti robot
+      - si robot
+      - jesi li ti bot
+      - tko te je napravio
+      - oktud si
+      - tko si ti
+      - sto si
+      - jesi ti bot
+      - bot
+      - pricam li ja s robotom
+      - pricam li s stvarnom osobom
+      - s kime pricam?
+      - sa kime ja razgovaram
+      - pricam li s covjekom ili robotom?

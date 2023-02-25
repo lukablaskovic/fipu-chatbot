@@ -4,23 +4,49 @@ intents:
   - greet
   - goodbye
   - thankyou
+  - thank_and_goodbye
   - affirm
   - deny
-  - thank_and_goodbye
+  - prijava_na_studij
+  - pocetak_upisa
+  - studijski_programi_fipu
+  - prijelaz_na_studij
+  - priznavanje_ispita
+  - prijava_zavrsnog_diplomskog
+  - prijava_ispita
+  - odjava_ispita
+  - promjena_izbornog
   - bot_challenge
 
 responses:
   utter_greet:
     - text: "Pozdrav! Kako ti mogu pomoći?"
   utter_goodbye:
-    - text: "Hvala na korištenju! Pozdrav :)"
-  utter_thankyou:
-    - text: "Nema problema! Tu sam da pomognem."
+    - text: "Nadam se da si dobio traženu informaciju! Pozdrav!"
+  utter_thank_and_goodbye:
+    - text: "Nema problema! Tu sam da pomognem :)"
   utter_did_that_help:
     - text: "Jesi li dobio traženu informaciju?"
   utter_iamabot:
-    - text: "Bok, zovem se FIPU_bot. Moj cilj je olakšati tvoje studiranje na Fakultetu informatike :D"
-
+    - text: "Bok, zovem se FIPU_bot. Cilj mi je olakšati tvoje studiranje na Fakultetu informatike :D"
+  utter_prijava_na_studij:
+    - text: "Prijave na studij se pokreću putem stranice www.postani-student.hr gdje se morate registrirati i odabrati željeni studijski program."
+  utter_pocetak_upisa:
+    - text: "Upisi počinju nakon objave konačnih rang listi, a prema rasporedu koji naknadno biti objavljen na stranici www.unipu.hr"
+  utter_studijski_programi_fipu:
+    - text: "Fakultet informatike u Puli pruža mogućnost upisa redovnog i online prijediplomskog i diplomskog studija informatike. Dodatno, diplomski studij se može upisati smjer Informatike i nastavnički smjer. Više informacija dostupno je na: https://fipu.unipu.hr/fipu/studijski_programi"
+  utter_prijelaz_na_studij:
+    - text: "Postupak prijelaza na neki od studijskih programa pokreće se putem zamolbe čiji obrazac je dostupan na poveznici https://www.unipu.hr/_download/repository/Obrazac-zamolba.pdf . Uz ispunjenu i vlastoručno potpisanu zamolbu morate dostaviti prijepis ocjena i silabuse svih položenih kolegija Uredu za studente i obrazovne programe na e-mail ured-za-studente@unipu.hr do 15. rujna tekuće akademske godine."
+  utter_priznavanje_ispita:
+    - text: "Priznavanje ispita pokreće se putem prijavnice za priznavanje ispita koja je dostupna na poveznici https://www.unipu.hr/_download/repository/Prijavnica_za_priznavanje_ispita.pdf . Prijavnicu morate ispuniti te zajedno sa prijepisom ocjena kojom dokazujete polaganje ispita predati predmetnom profesoru. Nakon što predmetni profesor potpisom potvrdi priznavanje ispita dužni ste prijavnicu poslati Uredu za studente i obrazovne programe poslati na e-mail: ured-za-studente@unipu.hr."
+  utter_prijava_zavrsnog_diplomskog:
+    - text: "U dogovoru sa mentorom birate temu završnog ili diplomskog rada. Nakon što izaberete temu morate popuniti obrazac za prijavu teme završnog ili diplomskog rada koji je dostupan na poveznici https://ffpu.unipu.hr/_download/repository/Obrazac_za_prijavu_teme_zavrsnog-diplomskog_rada.pdf . Prijavnicu mora potpisati mentor nakon čega se ista šalje na e-mail ured-za-studente@unipu.hr."
+  utter_prijava_ispita:
+    - text: "Ispite prijavljujete putem Studomata, najkasnije četiri dana prije definiranog ispitnog roka."
+  utter_odjava_ispita:
+    - text: "Ispite odjavljujete putem Studomata, najkasnije dva dana prije definiranog ispitnog roka."
+  utter_promjena_izbornog:
+    - text: "Izborne kolegije moguće je promijeniti unutar prva dva tjedna od početka nastave u zimskom i ljetnom semestru."
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
