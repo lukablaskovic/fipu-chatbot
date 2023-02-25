@@ -1,21 +1,21 @@
 {
   "preddiplomski_strucni": [
     {
-      "id": 0,
+      "id": 1,
       "name": "Predškolski odgoj (na hrvatskom i talijanskom jeziku)",
       "faculty": "Fakultet za odgojne i obrazovne znanosti",
       "faculty_abbr": "FOOZ",
       "URL": "https://fooz.unipu.hr/fooz/studijski_programi/preddiplomski/predskolski_odgoj"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Proizvodno strojarstvo",
       "faculty": "Tehnički fakultet u Puli",
       "faculty_abbr": "TPFU",
       "URL": "https://tfpu.unipu.hr/tfpu/studijski_programi/preddiplomski/proizvodno_strojarstvo"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Sestrinstvo",
       "faculty": "Medicinski fakultet u Puli",
       "faculty_abbr": "MFPU",
@@ -24,210 +24,210 @@
   ],
   "preddiplomski_sveucilisni": [
     {
-      "id": 0,
+      "id": 1,
       "name": "Arheologija (dvopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/dvopredmetni_studiji/arheologija"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Dizajn i audiovizualne komunikacije",
       "faculty": "",
       "faculty_abbr": "",
       "URL": "https://www.unipu.hr/obrazovanje/preddiplomski_sveucilisni_studijski_programi/dizajn_i_audiovizualne_komunikacije"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Primijenjena ekonomija",
       "faculty": "Fakultet ekonomije i turizma 'Dr. Mijo Mirković'",
       "faculty_abbr": "FET",
       "URL": "https://fet.unipu.hr/fet/studijski_programi/sveucilisni_preddiplomski_studiji/primijenjena_ekonomija"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Engleski jezik i književnost (dvopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/dvopredmetni_studiji/engleski_jezik_i_knjizevnost"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Prijediplomski sveučilišni studij Glazbena pedagogija",
       "faculty": "Muzička akademija u Puli",
       "faculty_abbr": "MAPU",
       "URL": "https://mapu.unipu.hr/mapu/studijski_programi/preddiplomski/glazbena_pedagogija"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Hrvatski jezik i književnost (dvopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/dvopredmetni_studiji/hrvatski_jezik_i_knjizevnost"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Hrvatski jezik i književnost (jednopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/jednopredmetni_preddiplomski_sveucilisni_studij_hrvatski_jezik_i_knjizevnost"
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Informatika",
       "faculty": "Fakultet informatike u Puli",
       "faculty_abbr": "FIPU",
       "URL": "https://fipu.unipu.hr/fipu/studijski_programi/preddiplomski_sveucilisni_studij_informatika"
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Japanski jezik i kultura (dvopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/dvopredmetni_studiji/japanski_jezik_i_kultura"
     },
     {
-      "id": 9,
+      "id": 10,
       "name": "Japanski jezik i kultura (jednopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/jednopredmetni_preddiplomski_sveucilisni_studij_japanski_jezik_i_kultura"
     },
     {
-      "id": 10,
+      "id": 11,
       "name": "Jezična i interkulturalna medijacija (jednopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/jezicna_i_interkulturalna_medijacija"
     },
     {
-      "id": 11,
+      "id": 12,
       "name": "Klasična harmonika",
       "faculty": "Muzička akademija u Puli",
       "faculty_abbr": "MAPU",
       "URL": "https://mapu.unipu.hr/mapu/studijski_programi/preddiplomski/klasicna_harmonika"
     },
     {
-      "id": 12,
+      "id": 13,
       "name": "Klavir",
       "faculty": "Muzička akademija u Puli",
       "faculty_abbr": "MAPU",
       "URL": "https://mapu.unipu.hr/mapu/studijski_programi/preddiplomski/klavir"
     },
     {
-      "id": 13,
+      "id": 14,
       "name": "Kultura i turizam",
       "faculty": "Fakultet ekonomije i turizma 'Dr. Mijo Mirković'",
       "faculty_abbr": "FET",
       "URL": "https://fet.unipu.hr/fet/studijski_programi/preddiplomski/kultura_i_turizam"
     },
     {
-      "id": 14,
+      "id": 15,
       "name": "Kultura i turizam i Talijanski jezik i kultura (dvopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/dvopredmetni_studiji/kultura_i_turizam_i_talijanski_jezik_i_kultura"
     },
     {
-      "id": 15,
+      "id": 16,
       "name": "Latinski jezik i rimska književnost (dvopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/dvopredmetni_studiji/latinski_jezik_i_rimska_knjizevnost"
     },
     {
-      "id": 16,
+      "id": 17,
       "name": "Poslovna ekonomija (Financijski management)",
       "faculty": "Fakultet ekonomije i turizma 'Dr. Mijo Mirković'",
       "faculty_abbr": "FET",
       "URL": "https://fet.unipu.hr/fet/studijski_programi/sveucilisni_preddiplomski_studiji/financijski_management"
     },
     {
-      "id": 17,
+      "id": 18,
       "name": "Poslovna ekonomija (Marketinško upravljanje)",
       "faculty": "Fakultet ekonomije i turizma 'Dr. Mijo Mirković'",
       "faculty_abbr": "FET",
       "URL": "https://fet.unipu.hr/fet/studijski_programi/sveucilisni_preddiplomski_studiji/marketinsko_upravljanje"
     },
     {
-      "id": 18,
+      "id": 19,
       "name": "Poslovna ekonomija (Management i poduzetništvo)",
       "faculty": "Fakultet ekonomije i turizma 'Dr. Mijo Mirković'",
       "faculty_abbr": "FET",
       "URL": "https://fet.unipu.hr/fet/studijski_programi/sveucilisni_preddiplomski_studiji/management_i_poduzetnistvo"
     },
     {
-      "id": 19,
+      "id": 20,
       "name": "Poslovna ekonomija (Turizam)",
       "faculty": "Fakultet ekonomije i turizma 'Dr. Mijo Mirković'",
       "faculty_abbr": "FET",
       "URL": "https://fet.unipu.hr/fet/studijski_programi/sveucilisni_preddiplomski_studiji/turizam"
     },
     {
-      "id": 20,
+      "id": 21,
       "name": "Poslovna ekonomija (Informatički management)",
       "faculty": "Fakultet ekonomije i turizma 'Dr. Mijo Mirković'",
       "faculty_abbr": "FET",
       "URL": "https://fet.unipu.hr/fet/studijski_programi/sveucilisni_preddiplomski_studiji/informaticki_menadzment"
     },
     {
-      "id": 21,
+      "id": 22,
       "name": "Povijest (dvopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/dvopredmetni_studiji/povijest"
     },
     {
-      "id": 22,
+      "id": 23,
       "name": "Povijest (jednopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/jednopredmetni_preddiplomski_sveucilisni_studij_povijest"
     },
     {
-      "id": 23,
+      "id": 24,
       "name": "Računarstvo",
       "faculty": "Tehnički fakultet u Puli",
       "faculty_abbr": "TFPU",
       "URL": "https://tfpu.unipu.hr/tfpu/studijski_programi/preddiplomski/racunarstvo"
     },
     {
-      "id": 24,
+      "id": 25,
       "name": "Rani i predškolski odgoj i obrazovanje na hrvatskom jeziku",
       "faculty": "Fakultet za odgojne i obrazovne znanosti",
       "faculty_abbr": "FOOZ",
       "URL": "https://fooz.unipu.hr/fooz/studijski_programi/preddiplomski/rani_i_predskolski_odgoj_i_obrazovanje_na_hrvatskom_jeziku"
     },
     {
-      "id": 25,
+      "id": 26,
       "name": "Rani i predškolski odgoj i obrazovanje na talijanskom jeziku",
       "faculty": "Fakultet za odgojne i obrazovne znanosti",
       "faculty_abbr": "FOOZ",
       "URL": "https://fooz.unipu.hr/fooz/studijski_programi/preddiplomski/rani_i_predskolski_odgoj_i_obrazovanje_na_talijanskom_jeziku"
     },
     {
-      "id": 26,
+      "id": 27,
       "name": "Solo pjevanje",
       "faculty": "Muzička akademija u Puli",
       "faculty_abbr": "MAPU",
       "URL": "https://mapu.unipu.hr/mapu/studijski_programi/preddiplomski/solo_pjevanje"
     },
     {
-      "id": 27,
+      "id": 28,
       "name": "Talijanski jezik i književnost (dvopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/dvopredmetni_studiji/talijanski_jezik_i_knjizevnost"
     },
     {
-      "id": 28,
+      "id": 29,
       "name": "Talijanski jezik i književnost (jednopredmetni)",
       "faculty": "Filozofski fakultet u Puli",
       "faculty_abbr": "FFPU",
       "URL": "https://ffpu.unipu.hr/ffpu/studijski_programi/sveucilisni_preddiplomski_studiji/talijanski_jezik_i_knjizevnost"
     },
     {
-      "id": 29,
+      "id": 30,
       "name": "Znanost o moru",
       "faculty": "Fakultet prirodnih znanosti u Puli",
       "faculty_abbr": "FPZ",
