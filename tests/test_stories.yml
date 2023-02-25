@@ -5,13 +5,13 @@ stories:
   - story: say goodbye
     steps:
       - user: |
-          bye-bye!
+          hvala, pozdrav!
         intent: goodbye
       - action: utter_goodbye
 
   - story: bot challenge
     steps:
       - user: |
-          are you a bot?
+          jesi li ti robot?
         intent: bot_challenge
       - action: utter_iamabot

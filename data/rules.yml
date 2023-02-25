@@ -12,15 +12,20 @@ rules:
       - intent: goodbye
       - action: utter_goodbye
 
-  - rule: Thank you and goodbye
+  - rule: When user quits, offer more help to him
     steps:
       - intent: thank_and_goodbye
-      - action: utter_thank_and_goodbye
+      - action: utter_goodbye
 
   - rule: Say 'I am a bot' anytime the user challenges
     steps:
       - intent: bot_challenge
       - action: utter_iamabot
+  - rule: Offer more help to user once he finishes task
+    steps:
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_great_im_still_here
   #-----------------------------------------
   #General questions
   - rule: prijava_na_studij
@@ -69,10 +74,6 @@ rules:
       - action: utter_promjena_izbornog
   #-----------------------------------------
   #Praksa related
-  - rule: List available companies for intership to user
-    steps:
-      - intent: search_poduzeca_praksa
-      - action: action_search_companies
 
   #Ask student his information when starting proces_prakse
   #PROCESS: start_proces_prakse

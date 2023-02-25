@@ -14,6 +14,7 @@ nlu:
       - pozz
       - ej bok
       - ej cao
+
   - intent: goodbye
     examples: |
       - dovidenja
@@ -61,6 +62,12 @@ nlu:
       - y
       - yeah
       - yup
+      - prihvacam
+      - slazem se
+      - potvrđujem
+      - potvrdujem
+      - da, prihvacam
+
   - intent: deny
     examples: |
       - ne
@@ -75,6 +82,14 @@ nlu:
       - no 
       - n
       - necu
+      - ne treba
+      - ne zanima me
+      - ne, hvala
+      - ne treba hvala ti
+      - ne treba hvala
+      - odbijam
+      - ne zelim
+      - ne prihvacam
 
   #General questions (FIPU)
   - intent: prijava_na_studij
@@ -138,7 +153,7 @@ nlu:
       - oslobadanje od predmeta
       - oslobadanje od kolegija
       - moze li mi se priznati neki predmet
-      - priznavanje ispita s drugog fakulteta
+      - priznavanje kolegija s drugog fakulteta
       - gdje mogu pronaci prijavnicu za priznavanje predmeta
       - moze li mi se priznati kolegij
       - gdje je prijavnica za priznavanje kolegija
@@ -215,6 +230,22 @@ nlu:
       - tvrtke za obavljanje prakse
       - tvrtke za praksu
       - tvrtke za studentsku praksu
+
+  - intent: show_projects
+    examples: |
+      - da, pokazi mi projekte za firmu [1](company_id)
+      - [2](company_id)
+      - molim te pokazi mi za [3](company_id)
+      - da, pokazi za [2](company_id)
+      - pokazi [4](company_id)
+      - zelim vidjeti projekte za [3](company_id)
+      - firma [1](company_id)
+      - projekti za firmu [3](company_id)
+      - zelim [4](company_id)
+      - izlistaj za [10](company_id)
+      - izlistaj projekte za firmu [5](company_id)
+      - da za [7](company_id)
+      - molim za [3](company_id)
 
     #Start process from intents (FIPU)
   - intent: start_proces_prakse

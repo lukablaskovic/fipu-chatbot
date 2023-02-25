@@ -25,6 +25,7 @@ entities:
   - student_firstName
   - student_lastName
   - student_email
+  - company_id
 
 forms:
   student_info_form:
@@ -58,6 +59,27 @@ slots:
       - type: from_entity
         entity: student_email
 
+  student_JMBAG:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: student_JMBAG
+
+  student_godina_studija:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: student_godina_studija
+
+  company_id:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: company_id
+
 responses:
   #General communication
   utter_greet:
@@ -65,11 +87,13 @@ responses:
     - text: "Bok! Kako ti mogu pomoći?"
     - text: "Pozdrav! Pitaj me što te zanima i pokušat ću ti pomoći :)"
   utter_goodbye:
-    - text: "Nadam se da si dobio traženu informaciju! Pozdrav!"
-  utter_thank_and_goodbye:
-    - text: "Nema problema! Tu sam da pomognem :)"
+    - text: "Ako je to to, pozdrav! :-)"
+  utter_great_im_still_here:
+    - text: "Ok, tu sam ako ti treba još nešto :)"
+    - text: "Okej, stojim ti na raspologanju :)"
   utter_did_that_help:
-    - text: "Jesi li dobio traženu informaciju?"
+    - text: "Jesi li dobio traženu informaciju? Ako ne, probaj me pitati opet."
+    - text: "Jesi li dobio zadovoljavajući odgovor? Ako ne, pitaj ponovo slobodno."
   utter_iamabot:
     - text: "Bok, zovem se FIPU_bot. Cilj mi je olakšati tvoje studiranje na Fakultetu informatike :D"
   #General FIPU questions
@@ -95,18 +119,24 @@ responses:
   #Praksa start process
   utter_proces_prakse_start_confirm:
     - text: "Zelis li zapoceti proces prijave na studentsku praksu?"
+  utter_ask_for_projects:
+    - text: "Možeš navesti i ID firme za koju želiš da ti pokažem dostupne zadatke. Ako želiš nešto specifično, molim obavijesti firmu da popune zadatak na: http://bit.ly/fipu-praksa-prijava-zadatka"
+  utter_ask_student_JMBAG:
+    - text: "Molim te napiši mi tvoj JMBAG."
   utter_ask_student_firstName:
     - text: "Molim te napiši mi tvoje ime."
   utter_ask_student_lastName:
     - text: "Molim te napiši mi tvoje prezime."
-  utter_ask_email:
-    - text: "Molim vas napišite mi vaš unipu email."
+  utter_ask_student_email:
+    - text: "Molim te napiši mi tvoj unipu email."
+
   utter_submit:
     - text: "Spremljeno, hvala."
   utter_slots_values:
     - text: "Tvoje ime i prezime je {student_firstName} {student_lastName}"
 actions:
   - action_search_companies
+  - action_show_projects
 
 session_config:
   session_expiration_time: 60

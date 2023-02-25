@@ -1,5 +1,4 @@
 version: "3.1"
-
 stories:
   - story: greet and then prijava_na_studij
     steps:
@@ -8,9 +7,18 @@ stories:
       - intent: prijava_na_studij
       - action: utter_prijava_na_studij
 
-  - story: greet and then prijava_na_studij
+  - story: List available companies for intership to user + show projects POSITIVE
     steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: prijava_na_studij
-      - action: utter_prijava_na_studij
+      - intent: search_poduzeca_praksa
+      - action: action_search_companies
+      - action: utter_ask_for_projects
+      - intent: show_projects
+      - action: action_show_projects
+
+  - story: List available companies for intership to user + show projects NEGATIVE
+    steps:
+      - intent: search_poduzeca_praksa
+      - action: action_search_companies
+      - action: utter_ask_for_projects
+      - intent: deny
+      - action: utter_did_that_help

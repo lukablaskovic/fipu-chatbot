@@ -78,7 +78,35 @@
     {
       "id": 16,
       "name": "Lloyds Design d.o.o.",
-      "URL": "https://lloyds-design.com"
+      "URL": "https://lloyds-design.com",
+      "zadaci": [
+        {
+          "id": 1,
+          "kontakt_email": "lloyds.robert@gmail.com",
+          "opis_zadatka": "Pomoc u izradi prototipa za mob. aplikaciju",
+          "preferirane_tehnologije": "Figma, CSS",
+          "student_preferencije": "",
+          "potrebno_imati": "",
+          "trajanje_h": 100,
+          "lokacija": "remote",
+          "okvirno_vrijeme_pocetka": "1.1.2023",
+          "angazman_fipu": "",
+          "napomena": "praksa placena preko studentskog ugovora"
+        },
+        {
+          "id": 2,
+          "kontakt_email": "lloyds.ivan@gmail.com",
+          "opis_zadatka": "Treba nam student koji ce re-dizajnirati sucenje web stranice jedne kompanije.",
+          "preferirane_tehnologije": "Vue.js, CSS, TailwindCSS",
+          "student_preferencije": "Ima smisla za dizajn",
+          "potrebno_imati": "svoj laptop",
+          "trajanje_h": 100,
+          "lokacija": "on-site i remote po dogovoru",
+          "okvirno_vrijeme_pocetka": "1.2.2023",
+          "angazman_fipu": "",
+          "napomena": ""
+        }
+      ]
     },
     {
       "id": 17,
@@ -178,7 +206,22 @@
     {
       "id": 36,
       "name": "Fury Studios d.o.o.",
-      "URL": "https://rawfury.com/"
+      "URL": "https://rawfury.com/",
+      "zadaci": [
+        {
+          "id": 1,
+          "kontakt_email": "fury.studios@gmail.com",
+          "opis_zadatka": "Potreban backend C# developer za rad u Unity-u",
+          "preferirane_tehnologije": "Unity, C#",
+          "student_preferencije": "snalazi se u Unity-u",
+          "potrebno_imati": "",
+          "trajanje_h": 140,
+          "lokacija": "Pula",
+          "okvirno_vrijeme_pocetka": "1.5.2023",
+          "angazman_fipu": "",
+          "napomena": ""
+        }
+      ]
     },
     {
       "id": 37,
@@ -209,6 +252,26 @@
       "id": 42,
       "name": "DAH Istra d.o.o.",
       "URL": ""
+    },
+    {
+      "id": 43,
+      "name": "DPoslovi d.o.o.",
+      "URL": "https://www.dposlovi.com/",
+      "zadaci": [
+        {
+          "id": 1,
+          "kontakt_email": "contact.me@gmail.com",
+          "opis_zadatka": "Potrebno je izraditi front-end za FIPU_bot",
+          "preferirane_tehnologije": "Vue.js,HTML,CSS,JS",
+          "student_preferencije": "marljiv i odgovoran",
+          "potrebno_imati": "Laptop",
+          "trajanje_h": 100,
+          "lokacija": "remote",
+          "okvirno_vrijeme_pocetka": "1.3.2023",
+          "angazman_fipu": "",
+          "napomena": ""
+        }
+      ]
     }
   ]
 }
