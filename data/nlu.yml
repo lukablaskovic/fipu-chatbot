@@ -1,91 +1,92 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - dobar dan
+      - bok
+      - cao
+      - ej
+      - ejla
+      - di si
+      - pozdrav
+      - dobro vecer
+      - pozz
+      - ej bok
+      - ej cao
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: thank_and_goodbye
+    examples: |
+      - hvala i dovidenja
+      - hvala, cujemo se
+      - tnx, aj bok
+      - hvala, bok
+      - hvala, cao
+      - tnx, cao
+      - tnqu dovidenja
+      - tnqu cao
+      - hvala, cao
+      - ajbok, tenks
+      - tenks,bok
+      - tenks stari, cao
+      - hvala i see ya
+      - tnx.. see ya
+      - to je to, hvala
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: thankyou
+    examples: |
+      - hvala
+      - tnx
+      - tnx stari
+      - hvala ti
+      - hvala vam
+      - hvala puno
+      - thanks
+      - thank you
+      - ty
+  - intent: bot_challenge
+    examples: |
+      - jesi li robot
+      - jesi ti robot
+      - si robot
+      - jesi li ti bot
+      - tko te je napravio
+      - oktud si
+      - tko si ti
+      - sto si
+      - jesi ti bot
+      - bot
+      - pricam li ja s robotom
+      - pricam li s stvarnom osobom
+      - s kime pricam?
+      - sa kime ja razgovaram
+      - pricam li s covjekom ili robotom?
+  - intent: affirm
+    examples: |
+      - da
+      - tako je
+      - odlicno
+      - to je to
+      - slazem se
+      - to mi je trebalo
+      - super
+      - top
+      - upravo tako
+      - yes
+      - y
+      - yeah
+      - yup
+  - intent: deny
+    examples: |
+      - ne
+      - nikako
+      - netocno
+      - nije istina
+      - nije tocno
+      - ne bih se slozio
+      - ne slazem se
+      - fulao si
+      - nope
+      - no 
+      - n
+      - necu
