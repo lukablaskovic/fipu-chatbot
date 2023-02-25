@@ -198,6 +198,40 @@ nlu:
       - izborni kolegij promjena
       - kako da promjenim izborni predmet
       - mogu li naknadno promjeniti izborni kolegij
+
+  #Praksa related
+  - intent: pretrazi_poduzeca_praksa
+    examples: |
+      - koja poduzeca za praksu su dostupna
+      - ispisi mi poduzeca dostupna za obavljanje prakse
+      - poduzeca za studentsku praksu
+      - koja poduzeca za praksu postoje
+      - prikazi mi poduzeca za obavljanje studentske prakse
+      - poduzeca za obavljanje prakse
+      - poduzeca za studentsku praksu
+      - firme za praksu
+      - firme gdje mogu raditi praksu
+      - firme za obavljanje studentske prakse
+      - tvrtke za obavljanje prakse
+      - tvrtke za praksu
+      - tvrtke za studentsku praksu
+
+    #Start process from intents (FIPU)
+  - intent: proces_prakse
+    examples: |
+      - praksa
+      - kako da se upisem na praksu
+      - kako da zapocnem praksu
+      - pocetak prakse
+      - kako da pocnem praksu na preddiplomskom studiju
+      - praksa na diplomskom
+      - kako da upišem studentsku praksu
+      - mogu li upisati studentsku praksu
+      - proces prakse
+      - studentska praksa
+      - kako da zapocnem proces odabira prakse
+      - kako mogu poceti raditi studentsku praksu na 3. godini
+    #Other
   - intent: bot_challenge
     examples: |
       - jesi li robot

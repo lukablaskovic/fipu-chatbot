@@ -17,6 +17,16 @@ rules:
       - intent: thank_and_goodbye
       - action: utter_thank_and_goodbye
 
+  - rule: List available companies for intership to user
+    steps:
+      - intent: pretrazi_poduzeca_praksa
+      - action: action_search_companies
+
+  - rule: Initialize praksa_proces
+    steps:
+      - intent: proces_prakse
+      - action: action_search_companies
+
   - rule: Say 'I am a bot' anytime the user challenges
     steps:
       - intent: bot_challenge

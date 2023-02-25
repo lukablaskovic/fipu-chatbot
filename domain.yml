@@ -17,6 +17,9 @@ intents:
   - odjava_ispita
   - promjena_izbornog
   - bot_challenge
+  #Process start actions
+  - pretrazi_poduzeca_praksa
+  - proces_prakse
 
 responses:
   utter_greet:
@@ -47,6 +50,10 @@ responses:
     - text: "Ispite odjavljujete putem Studomata, najkasnije dva dana prije definiranog ispitnog roka."
   utter_promjena_izbornog:
     - text: "Izborne kolegije moguće je promijeniti unutar prva dva tjedna od početka nastave u zimskom i ljetnom semestru."
+
+actions:
+  - action_search_companies
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
