@@ -1,3 +1,16 @@
 version: "3.1"
 
 stories:
+  - story: greet and then prijava_na_studij
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: prijava_na_studij
+      - action: utter_prijava_na_studij
+
+  - story: greet and then prijava_na_studij
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: prijava_na_studij
+      - action: utter_prijava_na_studij

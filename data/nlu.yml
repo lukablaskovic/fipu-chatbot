@@ -200,7 +200,7 @@ nlu:
       - mogu li naknadno promjeniti izborni kolegij
 
   #Praksa related
-  - intent: pretrazi_poduzeca_praksa
+  - intent: search_poduzeca_praksa
     examples: |
       - koja poduzeca za praksu su dostupna
       - ispisi mi poduzeca dostupna za obavljanje prakse
@@ -217,7 +217,7 @@ nlu:
       - tvrtke za studentsku praksu
 
     #Start process from intents (FIPU)
-  - intent: proces_prakse
+  - intent: start_proces_prakse
     examples: |
       - praksa
       - kako da se upisem na praksu
@@ -226,11 +226,15 @@ nlu:
       - kako da pocnem praksu na preddiplomskom studiju
       - praksa na diplomskom
       - kako da upišem studentsku praksu
+      - zelim upisati studentsku praksu
+      - zelim zapoceti studentsku praksu
+      - zelim se upisati na studentsku praksu
       - mogu li upisati studentsku praksu
       - proces prakse
       - studentska praksa
       - kako da zapocnem proces odabira prakse
       - kako mogu poceti raditi studentsku praksu na 3. godini
+
     #Other
   - intent: bot_challenge
     examples: |
