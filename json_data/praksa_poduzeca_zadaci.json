@@ -3,77 +3,92 @@
     {
       "id": 1,
       "name": "Astronomija Višnjan",
-      "URL": "https://astro.hr/"
+      "URL": "https://astro.hr/",
+      "zadaci": []
     },
     {
       "id": 2,
       "name": "AU Vidulini",
-      "URL": "http://vidulini-astro.hr/"
+      "URL": "http://vidulini-astro.hr/",
+      "zadaci": []
     },
     {
       "id": 3,
       "name": "Cenosco Croatia",
-      "URL": "https://cenosco.com/"
+      "URL": "https://cenosco.com/",
+      "zadaci": []
     },
     {
       "id": 4,
       "name": "CMGC d.o.o.",
-      "URL": "https://www.cmg.digital/"
+      "URL": "https://www.cmg.digital/",
+      "zadaci": []
     },
     {
       "id": 5,
       "name": "Plus Hosting Grupa d.o.o.",
-      "URL": "https://www.plus.hr"
+      "URL": "https://www.plus.hr",
+      "zadaci": []
     },
     {
       "id": 6,
       "name": "Express agencija d.o.o.",
-      "URL": "http://www.regionalexpress.hr/site/more/impressum"
+      "URL": "http://www.regionalexpress.hr/site/more/impressum",
+      "zadaci": []
     },
     {
       "id": 7,
       "name": "FWD Grupa",
-      "URL": "http://fwd.hr"
+      "URL": "http://fwd.hr",
+      "zadaci": []
     },
     {
       "id": 8,
       "name": "Geogrupa d.o.o.",
-      "URL": "https://geo-grupa.hr"
+      "URL": "https://geo-grupa.hr",
+      "zadaci": []
     },
     {
       "id": 9,
       "name": "IN2 d.o.o.",
-      "URL": "https://in2.hr"
+      "URL": "https://in2.hr",
+      "zadaci": []
     },
     {
       "id": 10,
       "name": "Infobip d.o.o.",
-      "URL": "https://infobip.com"
+      "URL": "https://infobip.com",
+      "zadaci": []
     },
     {
       "id": 11,
       "name": "Infosit d.o.o.",
-      "URL": "https://www.infosit.com"
+      "URL": "https://www.infosit.com",
+      "zadaci": []
     },
     {
       "id": 12,
       "name": "Intersoft Technologies d.o.o.",
-      "URL": "https://www.intersoft.uno"
+      "URL": "https://www.intersoft.uno",
+      "zadaci": []
     },
     {
       "id": 13,
       "name": "A&R Carton Istra",
-      "URL": "https://www.ar-carton.com/en/"
+      "URL": "https://www.ar-carton.com/en/",
+      "zadaci": []
     },
     {
       "id": 14,
       "name": "Infosit d.o.o.",
-      "URL": "https://www.infosit.com"
+      "URL": "https://www.infosit.com",
+      "zadaci": []
     },
     {
       "id": 15,
       "name": "ISTRA TECH d.o.o.",
-      "URL": "http://www.istratech.hr"
+      "URL": "http://www.istratech.hr",
+      "zadaci": []
     },
     {
       "id": 16,
@@ -81,7 +96,8 @@
       "URL": "https://lloyds-design.com",
       "zadaci": [
         {
-          "id": 1,
+          "id": 133,
+          "code": "Zadatak 132",
           "kontakt_email": "lloyds.robert@gmail.com",
           "opis_zadatka": "Pomoc u izradi prototipa za mob. aplikaciju",
           "preferirane_tehnologije": "Figma, CSS",
@@ -94,7 +110,7 @@
           "napomena": "praksa placena preko studentskog ugovora"
         },
         {
-          "id": 2,
+          "id": 122,
           "kontakt_email": "lloyds.ivan@gmail.com",
           "opis_zadatka": "Treba nam student koji ce re-dizajnirati sucenje web stranice jedne kompanije.",
           "preferirane_tehnologije": "Vue.js, CSS, TailwindCSS",
@@ -111,97 +127,116 @@
     {
       "id": 17,
       "name": "Infosit d.o.o.",
-      "URL": "https://www.infosit.com"
+      "URL": "https://www.infosit.com",
+      "zadaci": []
     },
     {
       "id": 18,
       "name": "Maistra d.d.",
-      "URL": "https://maistra.hr"
+      "URL": "https://maistra.hr",
+      "zadaci": []
     },
     {
       "id": 19,
       "name": "Mijena d.o.o.",
-      "URL": "https://mijena.com"
+      "URL": "https://mijena.com",
+      "zadaci": []
     },
     {
       "id": 20,
       "name": "Neo Lab d.o.o.",
-      "URL": "https://www.neolab.hr"
+      "URL": "https://www.neolab.hr",
+      "zadaci": []
     },
     {
       "id": 21,
       "name": "Penta d.o.o.",
-      "URL": "https://www.penta.hr"
+      "URL": "https://www.penta.hr",
+      "zadaci": []
     },
     {
       "id": 22,
       "name": "Pula Film Festival",
-      "URL": "https://www.pulafilmfestival.hr"
+      "URL": "https://www.pulafilmfestival.hr",
+      "zadaci": []
     },
     {
       "id": 23,
       "name": "QiQo d.o.o.",
-      "URL": "http://qiqo.hr"
+      "URL": "http://qiqo.hr",
+      "zadaci": []
     },
     {
       "id": 24,
       "name": "Spectral Core d.o.o.",
-      "URL": "https://www.spectralcore.com"
+      "URL": "https://www.spectralcore.com",
+      "zadaci": []
     },
     {
       "id": 25,
       "name": "Superius d.o.o.",
-      "URL": "https://superius.co"
+      "URL": "https://superius.co",
+      "zadaci": []
     },
     {
       "id": 26,
       "name": "Superius Idea d.o.o.",
-      "URL": "http://superiusidea.hr"
+      "URL": "http://superiusidea.hr",
+      "zadaci": []
     },
     {
       "id": 27,
       "name": "Sysbee d.o.o.",
-      "URL": "https://www.sysbee.net"
+      "URL": "https://www.sysbee.net",
+      "zadaci": []
     },
     {
       "id": 28,
       "name": "Red Martyr Entertainment",
-      "URL": "http://www.tanaisgames.com"
+      "URL": "http://www.tanaisgames.com",
+      "zadaci": []
     },
     {
       "id": 29,
       "name": "Uniline d.o.o.",
-      "URL": "https://www.uniline.hr/croatia/"
+      "URL": "https://www.uniline.hr/croatia/",
+      "zadaci": []
     },
     {
       "id": 30,
       "name": "Valamar d.d.",
-      "URL": "https://www.valamar.com"
+      "URL": "https://www.valamar.com",
+      "zadaci": []
     },
     {
       "id": 31,
       "name": "TRI M d.o.o.",
-      "URL": "https://tri-m.hr"
+      "URL": "https://tri-m.hr",
+      "zadaci": []
     },
     {
       "id": 32,
       "name": "NK Istra 1961 š.d.d.",
-      "URL": "https://nkistra.com"
+      "URL": "https://nkistra.com",
+      "zadaci": []
     },
     {
       "id": 33,
       "name": "H.3 Solutions d.o.o.",
-      "URL": "https://www.h3.solutions/"
+      "URL": "https://www.h3.solutions/",
+      "zadaci": []
     },
     {
       "id": 34,
       "name": "E.Studio d.o.o.",
-      "URL": "https://www.estudio.hr/"
+      "URL": "https://www.estudio.hr/",
+      "zadaci": []
     },
     {
       "id": 35,
       "name": "AB-PROJEKT d.o.o.",
-      "URL": ""
+      "URL": "",
+      "zadaci": []
     },
     {
       "id": 36,
@@ -209,7 +244,7 @@
       "URL": "https://rawfury.com/",
       "zadaci": [
         {
-          "id": 1,
+          "id": 150,
           "kontakt_email": "fury.studios@gmail.com",
           "opis_zadatka": "Potreban backend C# developer za rad u Unity-u",
           "preferirane_tehnologije": "Unity, C#",
@@ -226,32 +261,38 @@
     {
       "id": 37,
       "name": "LINK LAB j.d.o.o.",
-      "URL": "http://www.linklab.hr/"
+      "URL": "http://www.linklab.hr/",
+      "zadaci": []
     },
     {
       "id": 38,
       "name": "UTE d.o.o.",
-      "URL": ""
+      "URL": "",
+      "zadaci": []
     },
     {
       "id": 39,
       "name": "Tri plus grupa d.o.o.",
-      "URL": ""
+      "URL": "",
+      "zadaci": []
     },
     {
       "id": 40,
       "name": "PLAY DIGITAL d.o.o.",
-      "URL": "https://www.playdigital.hr/"
+      "URL": "https://www.playdigital.hr/",
+      "zadaci": []
     },
     {
       "id": 41,
       "name": "Institut Ruder Boskovic",
-      "URL": "irb.hr"
+      "URL": "irb.hr",
+      "zadaci": []
     },
     {
       "id": 42,
       "name": "DAH Istra d.o.o.",
-      "URL": ""
+      "URL": "",
+      "zadaci": []
     },
     {
       "id": 43,
@@ -259,7 +300,7 @@
       "URL": "https://www.dposlovi.com/",
       "zadaci": [
         {
-          "id": 1,
+          "id": 111,
           "kontakt_email": "contact.me@gmail.com",
           "opis_zadatka": "Potrebno je izraditi front-end za FIPU_bot",
           "preferirane_tehnologije": "Vue.js,HTML,CSS,JS",

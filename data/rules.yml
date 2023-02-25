@@ -12,10 +12,10 @@ rules:
       - intent: goodbye
       - action: utter_goodbye
 
-  - rule: When user quits, offer more help to him
+  - rule: When user thanks and wants to quit, offer more help to him
     steps:
       - intent: thank_and_goodbye
-      - action: utter_goodbye
+      - action: utter_thank_and_goodbye
 
   - rule: Say 'I am a bot' anytime the user challenges
     steps:
@@ -77,18 +77,18 @@ rules:
 
   #Ask student his information when starting proces_prakse
   #PROCESS: start_proces_prakse
-  #FORM: student_info_form
-  - rule: Activate student_info_form
+  #FORM: studentska_prijava_na_projekt_prakse_form
+  - rule: Activate studentska_prijava_na_projekt_prakse_form
     steps:
       - intent: start_proces_prakse
-      - action: student_info_form
-      - active_loop: student_info_form
+      - action: studentska_prijava_na_projekt_prakse_form
+      - active_loop: studentska_prijava_na_projekt_prakse_form
 
-  - rule: Submit student_info_form
+  - rule: Submit studentska_prijava_na_projekt_prakse_form
     condition:
-      - active_loop: student_info_form
+      - active_loop: studentska_prijava_na_projekt_prakse_form
     steps:
-      - action: student_info_form
+      - action: studentska_prijava_na_projekt_prakse_form
       - active_loop: null
       - slot_was_set:
           - requested_slot: null

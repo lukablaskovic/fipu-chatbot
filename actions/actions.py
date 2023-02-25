@@ -65,6 +65,7 @@ class ActionSearchProjects(Action):
         
         company_id = tracker.get_slot("company_id")
         validated_id = self.validate_company_id(company_id, dispatcher, tracker, domain)["company_id"]
+        print(validated_id)
         if(validated_id):
             projects = search_company_projects(company_id)
             if projects:
@@ -85,13 +86,11 @@ def search_for_companies():
 def get_companies_id():
     f = open("json_data/praksa_poduzeca_zadaci.json")
     companies = json.load(f)
-    companies_id = [comp["id"] for comp in companies["lista_poduzeca"]]
+    companies_id = [company["id"] for company in companies["lista_poduzeca"]]
     return companies_id
 
 def search_company_projects(id):
     f = open("json_data/praksa_poduzeca_zadaci.json")
     companies = json.load(f)
-    for comp in companies["lista_poduzeca"]:
-        if comp["id"] == int(id):
-            zadaci = comp["zadaci"]
-    return zadaci
+    for company in filter(lambda c : c["id"] == int(id), companies["lista_poduzeca"]):
+        return company["zadaci"] if company["zadaci"] else None

@@ -12,7 +12,7 @@ stories:
       - intent: search_poduzeca_praksa
       - action: action_search_companies
       - action: utter_ask_for_projects
-      - intent: show_projects
+      - intent: show_available_projects
       - action: action_show_projects
 
   - story: List available companies for intership to user + show projects NEGATIVE

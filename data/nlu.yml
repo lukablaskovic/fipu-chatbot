@@ -230,8 +230,14 @@ nlu:
       - tvrtke za obavljanje prakse
       - tvrtke za praksu
       - tvrtke za studentsku praksu
+      - mozes li mi izlistati poduzeca
+      - pokazi mi poduzeca za praksu na informatici
+      - koje firme mogu odabrati za praksu na informatici
+      - firme
+      - praksa - dostupne firme
+      - kompanije koje su mi dostupne za praksu
 
-  - intent: show_projects
+  - intent: show_available_projects
     examples: |
       - da, pokazi mi projekte za firmu [1](company_id)
       - [2](company_id)
@@ -246,6 +252,15 @@ nlu:
       - izlistaj projekte za firmu [5](company_id)
       - da za [7](company_id)
       - molim za [3](company_id)
+      - ima li koji zadatak za tvrtku [18](company_id)
+      - postoje li definirani zadaci za tvrtku [30](company_id)
+      - zadaci tvrtka [20](company_id)
+      - provjeri ima li zadataka za kompaniju [18](company_id)
+      - kompanija [1](company_id) zadaci
+      - zadatak [50](company_id)
+      - ima li zadataka za [2](company_id)
+      - ispiši zadatke za tvrtku pod brojem [22](company_id)
+      - zadatak pod br [23](company_id)
 
     #Start process from intents (FIPU)
   - intent: start_proces_prakse

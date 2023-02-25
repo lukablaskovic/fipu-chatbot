@@ -20,27 +20,48 @@ intents:
   #Process start actions
   - search_poduzeca_praksa
   - start_proces_prakse
+  - show_available_projects
 
 entities:
+  - student_JMBAG
   - student_firstName
   - student_lastName
-  - student_email
+  - student_study_year
   - company_id
+  - project_choice_1
+  - project_choice_2
+  - project_choice_3
 
 forms:
-  student_info_form:
+  studentska_prijava_na_projekt_prakse_form:
     required_slots:
+      - student_JMBAG
       - student_firstName
       - student_lastName
+      - student_study_year
+      - project_choice_1
+      - project_choice_2
+      - project_choice_3
 
 slots:
+  student_JMBAG:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        entity: student_JMBAG
+        conditions:
+          - active_loop: studentska_prijava_na_projekt_prakse_form
+            requested_slot: student_JMBAG
+
   student_firstName:
     type: text
     influence_conversation: true
     mappings:
       - type: from_text
+        entity: student_firstName
         conditions:
-          - active_loop: student_info_form
+          - active_loop: studentska_prijava_na_projekt_prakse_form
             requested_slot: student_firstName
 
   student_lastName:
@@ -48,30 +69,54 @@ slots:
     influence_conversation: true
     mappings:
       - type: from_text
+        entity: student_lastName
         conditions:
-          - active_loop: student_info_form
+          - active_loop: studentska_prijava_na_projekt_prakse_form
             requested_slot: student_lastName
 
-  student_email:
-    type: text
-    influence_conversation: true
+  student_study_year:
+    type: categorical
+    values:
+      - "3_preddiplomski"
+      - "1_diplomski"
+      - "2_diplomski"
+    influence_conversation: false
     mappings:
-      - type: from_entity
-        entity: student_email
+      - type: custom
+        entity: student_study_year
+        conditions:
+          - active_loop: studentska_prijava_na_projekt_prakse_form
+            requested_slot: student_study_year
 
-  student_JMBAG:
+  project_choice_1:
     type: text
-    influence_conversation: true
+    influence_conversation: false
     mappings:
-      - type: from_entity
-        entity: student_JMBAG
+      - type: from_text
+        entity: project_choice_1
+        conditions:
+          - active_loop: studentska_prijava_na_projekt_prakse_form
+            requested_slot: project_choice_1
 
-  student_godina_studija:
+  project_choice_2:
     type: text
-    influence_conversation: true
+    influence_conversation: false
     mappings:
-      - type: from_entity
-        entity: student_godina_studija
+      - type: from_text
+        entity: project_choice_2
+        conditions:
+          - active_loop: studentska_prijava_na_projekt_prakse_form
+            requested_slot: project_choice_2
+
+  project_choice_3:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+        entity: project_choice_3
+        conditions:
+          - active_loop: studentska_prijava_na_projekt_prakse_form
+            requested_slot: project_choice_3
 
   company_id:
     type: text
@@ -88,6 +133,9 @@ responses:
     - text: "Pozdrav! Pitaj me što te zanima i pokušat ću ti pomoći :)"
   utter_goodbye:
     - text: "Ako je to to, pozdrav! :-)"
+  utter_thank_and_goodbye:
+    - text: "Nema problema! Lijep pozdrav!"
+    - text: "Molim, ako trebaš još nešto slobodno pitaj!"
   utter_great_im_still_here:
     - text: "Ok, tu sam ako ti treba još nešto :)"
     - text: "Okej, stojim ti na raspologanju :)"
@@ -127,8 +175,14 @@ responses:
     - text: "Molim te napiši mi tvoje ime."
   utter_ask_student_lastName:
     - text: "Molim te napiši mi tvoje prezime."
-  utter_ask_student_email:
-    - text: "Molim te napiši mi tvoj unipu email."
+  utter_ask_student_study_year:
+    - text: "Sada odaberi na kojoj si godini studija"
+  utter_ask_project_choice_1:
+    - text: "Koji je tvoj prvi (1) odabir zadatka?"
+  utter_ask_project_choice_2:
+    - text: "Koji je tvoj drugi (2) odabir zadatka?"
+  utter_ask_project_choice_3:
+    - text: "Koji je tvoj treći (3) odabir zadatka?"
 
   utter_submit:
     - text: "Spremljeno, hvala."
