@@ -1,6 +1,7 @@
 version: "3.1"
 
 nlu:
+  #Basic interactions
   - intent: greet
     examples: |
       - dobar dan

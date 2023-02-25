@@ -1,6 +1,7 @@
 version: "3.1"
 
 rules:
+  #Basic greetings rules
   - rule: Greet anytime the user says greets
     steps:
       - intent: greet
