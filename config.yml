@@ -17,11 +17,12 @@ pipeline:
     dimensions:
       - number
   - name: DIETClassifier
-    epochs: 100
+    epochs: 150
+    constrain_similarities: True
   - name: EntitySynonymMapper
 
 policies:
   - name: TEDPolicy
-    epochs: 50
+    epochs: 100
   - name: AugmentedMemoizationPolicy
   - name: RulePolicy

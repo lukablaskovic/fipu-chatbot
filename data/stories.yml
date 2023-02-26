@@ -22,3 +22,15 @@ stories:
       - action: utter_ask_for_projects
       - intent: deny
       - action: utter_did_that_help
+
+  - story: studentska_prijava_na_projekt_prakse confirmation successful
+    steps:
+      - action: utter_submit_praksa_A
+      - intent: affirm
+      - action: utter_submit_praksa_A_successful
+
+  - story: studentska_prijava_na_projekt_prakse confirmation unsuccessful
+    steps:
+      - action: utter_submit_praksa_A
+      - intent: deny
+      - action: utter_submit_praksa_A_unsuccessful

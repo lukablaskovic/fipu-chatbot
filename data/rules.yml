@@ -21,6 +21,7 @@ rules:
     steps:
       - intent: bot_challenge
       - action: utter_iamabot
+
   - rule: Offer more help to user once he finishes task
     steps:
       - action: utter_did_that_help
@@ -76,11 +77,11 @@ rules:
   #Praksa related
 
   #Ask student his information when starting proces_prakse
-  #PROCESS: start_proces_prakse
+  #PROCESS: start_studentska_prijava_na_projekt_prakse
   #FORM: studentska_prijava_na_projekt_prakse_form
   - rule: Activate studentska_prijava_na_projekt_prakse_form
     steps:
-      - intent: start_proces_prakse
+      - intent: start_studentska_prijava_na_projekt_prakse
       - action: studentska_prijava_na_projekt_prakse_form
       - active_loop: studentska_prijava_na_projekt_prakse_form
 
@@ -92,5 +93,5 @@ rules:
       - active_loop: null
       - slot_was_set:
           - requested_slot: null
-      - action: utter_submit
+      - action: utter_submit_praksa_A
       - action: utter_slots_values

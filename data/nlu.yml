@@ -33,15 +33,11 @@ nlu:
       - puno hvala
       - hvala i dovidenja
       - hvala, cujemo se
-      - tnx, aj bok
-      - hvala, bok
       - hvala, cao
       - tnx, cao
       - tnqu dovidenja
       - tnqu cao
       - hvala, cao
-      - ajbok, tenks
-      - tenks,bok
       - tenks stari, cao
       - hvala i see ya
       - tnx.. see ya
@@ -67,6 +63,10 @@ nlu:
       - potvrđujem
       - potvrdujem
       - da, prihvacam
+      - tocno
+      - to je tocno
+      - ispravno
+      - ispravni
 
   - intent: deny
     examples: |
@@ -90,6 +90,9 @@ nlu:
       - odbijam
       - ne zelim
       - ne prihvacam
+      - nije dobro
+      - prekini proces
+      - prekini radnju
 
   #General questions (FIPU)
   - intent: prijava_na_studij
@@ -262,24 +265,64 @@ nlu:
       - ispiši zadatke za tvrtku pod brojem [22](company_id)
       - zadatak pod br [23](company_id)
 
-    #Start process from intents (FIPU)
-  - intent: start_proces_prakse
+  - intent: inform_student_study_year
     examples: |
-      - praksa
+      - [1 diplomski]{"entity": "student_study_year", "value": "1_diplomski"}
+      - [1. godina diplomski]{"entity": "student_study_year", "value": "1_diplomski"}
+      - [1. diplomski]{"entity": "student_study_year", "value": "1_diplomski"}
+      - [1 god dipl]{"entity": "student_study_year", "value": "1_diplomski"}
+      - studiram na [1 godini diplomskog]{"entity": "student_study_year", "value": "1_diplomski"} studija
+      - na [prvoj godini diplomskog]{"entity": "student_study_year", "value": "1_diplomski"}
+      - [1 god diplomskog]{"entity": "student_study_year", "value": "1_diplomski"}
+      - na [1. god diplomskog]{"entity": "student_study_year", "value": "1_diplomski"}
+      - [prva godina diplomskog]{"entity": "student_study_year", "value": "1_diplomski"}
+      - [diplomski prva godina]{"entity": "student_study_year", "value": "1_diplomski"}
+      - [diplomski studij prva]{"entity": "student_study_year", "value": "1_diplomski"}
+      - [diplomski prva]{"entity": "student_study_year", "value": "1_diplomski"}
+      - student sam [prve godine diplomskog]{"entity": "student_study_year", "value": "1_diplomski"}
+      - na [prvoj godini diplomskog]{"entity": "student_study_year", "value": "1_diplomski"} sam
+      - na [prvoj god diplomskog]{"entity": "student_study_year", "value": "1_diplomski"}
+      - [druga godina diplomskog]{"entity": "student_study_year", "value": "2_diplomski"}
+      - na [drugoj godini diplomskog]{"entity": "student_study_year", "value": "2_diplomski"}
+      - [2. diplomski]{"entity": "student_study_year", "value": "2_diplomski"}
+      - [2 god diplomskog]{"entity": "student_study_year", "value": "2_diplomski"}
+      - [2. god diplomskog]{"entity": "student_study_year", "value": "2_diplomski"}
+      - [druga god diplomski]{"entity": "student_study_year", "value": "2_diplomski"}
+      - [na drugoj godini]{"entity": "student_study_year", "value": "2_diplomski"}
+      - [druga god diplomski] studij{"entity": "student_study_year", "value": "2_diplomski"}
+      - [treca godina preddiplomski]{"entity": "student_study_year", "value": "3_preddiplomski"}
+      - [treca god prijediplomski]{"entity": "student_study_year", "value": "3_preddiplomski"}
+      - [3. god prijediplomski]{"entity": "student_study_year", "value": "3_preddiplomski"}
+      - na [trecoj godini preddiplomskog]{"entity": "student_study_year", "value": "3_preddiplomski"}
+      - [3 god]{"entity": "student_study_year", "value": "3_preddiplomski"}
+      - na [trecoj godini]{"entity": "student_study_year", "value": "3_preddiplomski"}
+      - [treca preddiplomski]{"entity": "student_study_year", "value": "3_preddiplomski"}
+      - [treca godina preddiplomskog]{"entity": "student_study_year", "value": "3_preddiplomski"} studija
+      - [3 preddiplomski]{"entity": "student_study_year", "value": "3_preddiplomski"}
+      - studiram na [trecoj godini prediplomskog]{"entity": "student_study_year", "value": "3_preddiplomski"}
+      - na [3. god preddiplomskog]{"entity": "student_study_year", "value": "3_preddiplomski"}
+      - na [3 god prijediplomskog]{"entity": "student_study_year", "value": "3_preddiplomski"} studija informatike
+      - [3 god preddiplomskog]{"entity": "student_study_year", "value": "3_preddiplomski"}
+
+    #Start process from intents (FIPU)
+  - intent: start_studentska_prijava_na_projekt_prakse
+    examples: |
+      - zelim prijaviti zeljene zadatke za strucnu praksu
+      - mogu prijaviti praksu i zadatke
+      - mogu prijaviti praksu po modelu A
+      - prijava prakse i zadataka model A
+      - nemam ugovorenu tvrtku, kako da se upisem na praksu
       - kako da se upisem na praksu
-      - kako da zapocnem praksu
-      - pocetak prakse
+      - kako da se prijavim projekt prakse 
+      - kako da se prijavim na zadatke prakse
       - kako da pocnem praksu na preddiplomskom studiju
-      - praksa na diplomskom
-      - kako da upišem studentsku praksu
-      - zelim upisati studentsku praksu
-      - zelim zapoceti studentsku praksu
-      - zelim se upisati na studentsku praksu
-      - mogu li upisati studentsku praksu
-      - proces prakse
-      - studentska praksa
-      - kako da zapocnem proces odabira prakse
+      - prijava na projekte prakse
+      - proces prijave na projekte prakse
+      - prijava na zadatke prakse
+      - kako da prijavim zeljene zadatke za praksu
+      - zelim prijaviti za praksu zadatke
       - kako mogu poceti raditi studentsku praksu na 3. godini
+      - prijava dostupnih zadataka za strucnu praksu
 
     #Other
   - intent: bot_challenge
@@ -299,3 +342,22 @@ nlu:
       - s kime pricam?
       - sa kime ja razgovaram
       - pricam li s covjekom ili robotom?
+
+    #Sinonimi
+  - synonym: tvrtka
+    examples: |
+      - kompanija
+      - firma
+      - poduzece
+
+  - synonym: praksa
+    examples: |
+      - strucna praksa
+
+  - synonym: godina
+    examples: |
+      - god
+
+  - synonym: preddiplomski
+    examples: |
+      - prijediplomski

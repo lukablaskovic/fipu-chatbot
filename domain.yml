@@ -19,8 +19,9 @@ intents:
   - bot_challenge
   #Process start actions
   - search_poduzeca_praksa
-  - start_proces_prakse
+  - start_studentska_prijava_na_projekt_prakse
   - show_available_projects
+  - inform_student_study_year
 
 entities:
   - student_JMBAG
@@ -82,7 +83,7 @@ slots:
       - "2_diplomski"
     influence_conversation: false
     mappings:
-      - type: custom
+      - type: from_entity
         entity: student_study_year
         conditions:
           - active_loop: studentska_prijava_na_projekt_prakse_form
@@ -166,7 +167,7 @@ responses:
 
   #Praksa start process
   utter_proces_prakse_start_confirm:
-    - text: "Zelis li zapoceti proces prijave na studentsku praksu?"
+    - text: "Zelis li zapoceti proces prijave zadataka za studentsku praksu?"
   utter_ask_for_projects:
     - text: "Možeš navesti i ID firme za koju želiš da ti pokažem dostupne zadatke. Ako želiš nešto specifično, molim obavijesti firmu da popune zadatak na: http://bit.ly/fipu-praksa-prijava-zadatka"
   utter_ask_student_JMBAG:
@@ -176,7 +177,7 @@ responses:
   utter_ask_student_lastName:
     - text: "Molim te napiši mi tvoje prezime."
   utter_ask_student_study_year:
-    - text: "Sada odaberi na kojoj si godini studija"
+    - text: "Na kojoj si godini studija?"
   utter_ask_project_choice_1:
     - text: "Koji je tvoj prvi (1) odabir zadatka?"
   utter_ask_project_choice_2:
@@ -184,10 +185,14 @@ responses:
   utter_ask_project_choice_3:
     - text: "Koji je tvoj treći (3) odabir zadatka?"
 
-  utter_submit:
-    - text: "Spremljeno, hvala."
+  utter_submit_praksa_A:
+    - text: "Molim te potvrdi mi jesu li uneseni podaci ispravni prije nego pošaljem."
+  utter_submit_praksa_A_successful:
+    - text: "To je to, uspješno sam te prijavio na projekt prakse!"
+  utter_submit_praksa_A_unsuccessful:
+    - text: "Molim te započni ponovo proces prakse ukoliko ti neki podaci nisu točno uneseni ili si se predomislio."
   utter_slots_values:
-    - text: "Tvoje ime i prezime je {student_firstName} {student_lastName}"
+    - text: "Tvoja prijavnica izgleda ovako: \n\nJMBAG: {student_JMBAG}\n Ime i prezime: {student_firstName} {student_lastName}\n Godina studija: {student_study_year}\n Prvi izbor: {project_choice_1}\n Drugi izbor: {project_choice_2}\n Treci izbor: {project_choice_3}\n"
 actions:
   - action_search_companies
   - action_show_projects

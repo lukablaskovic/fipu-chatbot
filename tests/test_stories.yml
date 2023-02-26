@@ -15,3 +15,20 @@ stories:
           jesi li ti robot?
         intent: bot_challenge
       - action: utter_iamabot
+
+  - story: praksa A form successful path
+    steps:
+      - user: |
+          kako mogu prijaviti praksu i zeljene zadatke
+        intent: start_studentska_prijava_na_projekt_prakse
+      - action: studentska_prijava_na_projekt_prakse_form
+      - active_loop: studentska_prijava_na_projekt_prakse_form
+      - user: |
+          na [1 god diplomskog]{"entity": "student_study_year", "value": "1_diplomski"}
+        intent: inform_student_study_year
+      - action: studentska_prijava_na_projekt_prakse_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_submit_praksa_A
+      - action: utter_slots_values

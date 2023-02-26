@@ -70,7 +70,7 @@ class ActionSearchProjects(Action):
             projects = search_company_projects(company_id)
             if projects:
                 project = "\n".join([f"\nZadatak {project['id']}:\n Kontakt email: {project['kontakt_email']}\n Opis zadatka: {project['opis_zadatka']}\n Preferirane tehnologije: {project['preferirane_tehnologije']}\n Preferencije za studenta: {project['student_preferencije']}\n Potrebno je imati: {project['potrebno_imati']}\n Trajanje: {project['trajanje_h']} sati\n Lokacija: {project['lokacija']}\n Željeno okvirno vrijeme početka: {project['okvirno_vrijeme_pocetka']}\n Angažman FIPU: {project['angazman_fipu']}\n Napomena: {project['napomena']}\n " for project in projects])
-                dispatcher.utter_message(text=f"Popis zadataka za odabranu tvrtku:\n{project}")
+                dispatcher.utter_message(text=f"Popis zadataka za odabranu tvrtku:\n\n{project}")
             else:
                 dispatcher.utter_message(text="Za odabranu tvrtku nema definiranih zadataka. Međutim, možeš obavijestiti tvrtku da ga definira na: http://bit.ly/fipu-praksa-prijava-zadatka")
         else:
