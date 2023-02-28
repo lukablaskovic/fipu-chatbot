@@ -6,20 +6,41 @@ recipe: default.v1
 # https://rasa.com/docs/rasa/nlu/components/
 assistant_id: FIPU_bot
 language: hr
-
+#SpacyNLP config
 pipeline:
-  - name: WhitespaceTokenizer
+  - name: SpacyNLP
+    model: hr_core_news_lg
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
+  - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
-    token_pattern: (?u)\b\w+\b
-  - name: DucklingEntityExtractor
-    url: http://localhost:8000
-    dimensions:
-      - number
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
   - name: DIETClassifier
-    epochs: 150
-    constrain_similarities: True
+    constrain_similarities: true
+    epochs: 100
   - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+
+#Default config
+#pipeline:
+#  - name: WhitespaceTokenizer
+#  - name: RegexFeaturizer
+#  - name: LexicalSyntacticFeaturizer
+#  - name: CountVectorsFeaturizer
+#  - name: CountVectorsFeaturizer
+#    analyzer: "char_wb"
+#    min_ngram: 1
+#    max_ngram: 4
+#  - name: DIETClassifier
+#    epochs: 100
+#  - name: EntitySynonymMapper
+#  - name: ResponseSelector
+#    epochs: 100
 
 policies:
   - name: TEDPolicy
