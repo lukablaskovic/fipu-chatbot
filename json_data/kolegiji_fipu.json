@@ -1,0 +1,334 @@
+{
+  "prijediplomski": [
+    {
+      "id": "1",
+      "sifra": "241256",
+      "naziv": "Diferencijalni i integralni račun",
+      "godina": "1",
+      "semestar": "1",
+      "nositelji": [
+        {
+          "ime": "Valter",
+          "prezime": "Boljunčić",
+          "zvanje": "izvanredni profesor",
+          "email": "valter.boljuncic@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Andrea",
+          "prezime": "Stanković",
+          "zvanje": "asistent",
+          "email": "andrea.stankovic@unipu.hr"
+        }
+      ],
+      "ects": 2,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "2",
+      "sifra": "199565",
+      "naziv": "Engleski jezik I",
+      "godina": "1",
+      "semestar": "1",
+      "nositelji": [
+        {
+          "ime": "Maja",
+          "prezime": "Novak Lađarević",
+          "zvanje": "viši predavač",
+          "email": "maja.novak.ladarevic@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Moira",
+          "prezime": "Kostić Bobanović",
+          "zvanje": "redoviti profesor",
+          "email": "moira.kostic.bobanovic@unipu.hr"
+        },
+        {
+          "ime": "Mila",
+          "prezime": "Brnčić",
+          "zvanje": "naslovni asistent",
+          "email": "mila.brncic.1@unipu.hr"
+        }
+      ],
+      "ects": 6,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "3",
+      "sifra": "241255",
+      "naziv": "Logika i diskretna matematika",
+      "godina": "1",
+      "semestar": "1",
+      "nositelji": [
+        {
+          "ime": "Siniša",
+          "prezime": "Miličić",
+          "zvanje": "docent",
+          "email": "sinisa.milicic@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Tea",
+          "prezime": "Šumberac",
+          "zvanje": "naslovni asistent",
+          "email": "tea.sumberac@unipu.hr"
+        }
+      ],
+      "ects": 4,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "4",
+      "sifra": "199562",
+      "naziv": "Osnove IKT",
+      "godina": "1",
+      "semestar": "1",
+      "nositelji": [
+        {
+          "ime": "Darko",
+          "prezime": "Etinger",
+          "zvanje": "izvanredni profesor",
+          "email": "darko.etinger@unipu.hr"
+        },
+        {
+          "ime": "Snježana",
+          "prezime": "Babić",
+          "zvanje": "docent",
+          "email": "snjezana.babic@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Robert",
+          "prezime": "Šajina",
+          "zvanje": "asistent",
+          "email": "robert.sajina@unipu.hr"
+        },
+        {
+          "ime": "Romeo",
+          "prezime": "Šajina",
+          "zvanje": "asistent",
+          "email": "romeo.sajina@unipu.hr"
+        }
+      ],
+      "ects": 6,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "5",
+      "sifra": "241257",
+      "naziv": "Osnove podatkovne znanosti",
+      "godina": "1",
+      "semestar": "1",
+      "nositelji": [
+        {
+          "ime": "Siniša",
+          "prezime": "Miličić",
+          "zvanje": "docent",
+          "email": "sinisa.milicic@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Filip",
+          "prezime": "Jurman",
+          "zvanje": "naslovni asistent",
+          "email": "filip.jurman@unipu.hr"
+        }
+      ],
+      "ects": 6,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "6",
+      "sifra": "199563",
+      "naziv": "Programiranje",
+      "godina": "1",
+      "semestar": "1",
+      "nositelji": [
+        {
+          "ime": "Tihomir",
+          "prezime": "Orehovački",
+          "zvanje": "izvanredni profesor",
+          "email": "tihomir.orehovacki@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Robert",
+          "prezime": "Šajina",
+          "zvanje": "asistent",
+          "email": "robert.sajina@unipu.hr"
+        },
+        {
+          "ime": "Igor",
+          "prezime": "Škorić",
+          "zvanje": "viši predavač",
+          "email": "igor.skoric@unipu.hr"
+        }
+      ],
+      "ects": 6,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "7",
+      "sifra": "186183",
+      "naziv": "Baze podataka I",
+      "godina": "1",
+      "semestar": "2",
+      "nositelji": [
+        {
+          "ime": "Goran",
+          "prezime": "Oreški",
+          "zvanje": "docent",
+          "email": "goran.oreski@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Romeo",
+          "prezime": "Šajina",
+          "zvanje": "asistent",
+          "email": "romeo.sajina@unipu.hr"
+        },
+        {
+          "ime": "Zlatko",
+          "prezime": "Sirotić",
+          "zvanje": "univ. spec. inf.",
+          "email": "zlatko.sirotic@unipu.hr"
+        }
+      ],
+      "ects": 6,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "8",
+      "sifra": "241258",
+      "naziv": "Geometrija i linearna algebra",
+      "godina": "1",
+      "semestar": "2",
+      "nositelji": [
+        {
+          "ime": "Valter",
+          "prezime": "Boljunčić",
+          "zvanje": "izvanredni profesor",
+          "email": "valter.boljuncic@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Tea",
+          "prezime": "Šumberac",
+          "zvanje": "naslovni asistent",
+          "email": "tea.sumberac@unipu.hr"
+        }
+      ],
+      "ects": 3,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "9",
+      "sifra": "241259",
+      "naziv": "Matematička analiza",
+      "godina": "1",
+      "semestar": "2",
+      "nositelji": [
+        {
+          "ime": "Siniša",
+          "prezime": "Miličić",
+          "zvanje": "docent",
+          "email": "sinisa.milicic@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Andrea",
+          "prezime": "Stanković",
+          "zvanje": "asistent",
+          "email": "andrea.stankovic@unipu.hr"
+        }
+      ],
+      "ects": 3,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "10",
+      "sifra": "186165",
+      "naziv": "Multimedijalni sustavi",
+      "godina": "1",
+      "semestar": "2",
+      "nositelji": [
+        {
+          "ime": "Željka",
+          "prezime": "Tomatović",
+          "zvanje": "docent",
+          "email": "zeljka.tomasovic@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Dario",
+          "prezime": "Kukuljan",
+          "zvanje": "asistent - predavač",
+          "email": "dario.kukuljan@unipu.hr"
+        }
+      ],
+      "ects": 6,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "11",
+      "sifra": "199650",
+      "naziv": "Poslovni informacijski sustavi",
+      "godina": "1",
+      "semestar": "2",
+      "nositelji": [
+        {
+          "ime": "Darko",
+          "prezime": "Etinger",
+          "zvanje": "izvanredni profesor",
+          "email": "darko.etinger@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Srđan Daniel",
+          "prezime": "Simić",
+          "zvanje": "stručni suradnik",
+          "email": "srdjan.daniel.simic@unipu.hr"
+        }
+      ],
+      "ects": 6,
+      "obavezni_kolegij": true
+    },
+    {
+      "id": "12",
+      "sifra": "186175",
+      "naziv": "Strukture podataka i algoritmi",
+      "godina": "1",
+      "semestar": "2",
+      "nositelji": [
+        {
+          "ime": "Tihomir",
+          "prezime": "Orehovački",
+          "zvanje": "izvanredni profesor",
+          "email": "tihomir.orehovacki@unipu.hr"
+        }
+      ],
+      "izvodaci": [
+        {
+          "ime": "Igor",
+          "prezime": "Škorić",
+          "zvanje": "viši predavač",
+          "email": "igor.skoric@unipu.hr"
+        }
+      ],
+      "ects": 6,
+      "obavezni_kolegij": true
+    }
+  ]
+}
