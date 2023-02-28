@@ -1,0 +1,21 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODWxKDkjviA/pbQqNTkxvqAoMbs4sbY2FgD6niJ/": "action_search_companies",
+    "eJyNjNEJwCAMBVfJAJ3AVUqRkAYa2kYx2o+Ku1eoA/j3Du7dWtsCNSZ+PFKWoA7qP7zizQ4GXGKZtbvFOHVHtGN2YIyJDh/DXl4m9DHhadjmouNM4Y6owjaf3z6SV0dS": "utter_ask_for_projects",
+    "eJytjNEJwzAMBVfxAJnAq5QihKpSN4lkJDkfNdm9hmaABvL3Dt7dre9T6tV4A6QoKjn13wDBlXM6YCkeLOPbnG18igyMnJzR6AVVH+3DhFANZ8f9v+ghk64VpbBflW8RbIA+w1NtOPpmihP1+xd01Gv1": "action_listen",
+    "eJytkEEKAjEMRa/SA3iCXkUkhEzEOk5SklTQ0rtbcPa6mN3/8N9b/HMfp9Sr8ROQoqjk1L8BBDfOaS+P4sEyt83Z5qbIrJGTMxrdoOrS3kwI1XB1HP9Jd5h0qyiF/Sh9i2AD9BWuapPRO1McZv/xyMLyGuPyARCHhWI=": "utter_did_that_help",
+    "eJytkFEKwzAMQ6+SA+wEuUoZxiQeydo6wXYGW+jdF1h/R/vRPwmkh9DUt5vrVegFGCwX9q7/BDCu5N1ulqxGPLJNSUYm87DmnRJKSFBLbB8KCFVwVtzOQfdyKGtFzqRX4ZsZCaDO8CgyOuVJwS6jHzwSid/nBsYcwRIaJFrqP9D9CxuPoT8=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFEpLSlKL4otLk3IzS+ILihKzixPjHWtrYwF/GxZh": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFEpLSlKL4otLk3IzS+ILihKzixPjHWsJaIJycjKLS1LzgGpLi1OLgGoy84DcEqB0WlpmUW5tbSwAE/kwkw==": "utter_submit_praksa_A_successful",
+    "eJyFjc0JgDAMhVfpAE7gzTlEQi0pBNsqSeqldHcDelS8vY/3N7c+uHYwnuCD0l5G124BxWccXVVFBqlrJoWD/SYepv5TeiCRKBbLVkG2DBVDNTtG4vw38vpsHAKKxJq+d5cLqqlSoA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJydjkEKwCAMBL+SB/QFfqWUIG0okTaVGL2If69g70JvOzAMu9a2QI1KBf1u/IiDOgaKv8nBBxcnI+luTqTdYeloDk4lsjZpZDNSHOq/wuRFVA6++C5jsnxwaG17AXrRU2E=": "utter_prijava_na_studij",
+    "eJydjkEKgCAQRa/iATqBV4kYpIYYqUnG0Y149wTbtUja/Q/vP/5c6mRKEMzgVqWLrSk9ALsTrXnKQVGRG5siSmOIW1VrdkHU+uFIqijQ0X+GjxdByLvsGgxR00Z+7NF7NmJebu4Odl8=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFEpLSlKL4otLk3IzS+ILihKzixPjHWsJaIJycjKLS1LzgGpLi1OLgGoy84DcEiuFlNS8ytraWACzuS/O": "utter_submit_praksa_A_unsuccessful",
+    "eJyFjUEKgDAMBL/SB/iC3nyHSKg1QrFGaRJBSv9uQY9KbzuwOzvk0pl8JDzBeQk7WZOfAOQ2tEZFMAHrtAWBI7mVHfSlMXohBhak2lXGVDuBKoo1M9LVUnz+ghKr98i8aPzzjjcLbFH5": "action_listen",
+    "eJytkFEKwzAMQ6+SA+wEuUoZxss8mjWNg+10sJC7L7DCPteP/kkgPYGm1i+uFaENMFjk7F37Csi4kne7SVGN8shWJRmZmIc175RQwgyF7/VNAaEILor9GHQvB14L5kh6Fr6akQDqAg+W0eEnBTuN/u+RmV+AG8aEt0S/9X79AEOsjTw=": "action_show_projects",
+    "eJytkFEKAjEMRK/SA3iCXkUkxBrZut2mJOkKlr27FRf8Uvdj/zIw8ybMsS0H14rQDBgscvauvQ/IOJF3q0hRjXL3ViXpnpi7NO+UUMIAhS/1QQGhCI6KyzboGg48FcyRdC98NSMB1BGuLD3DNwq2G/3fIgPfAWeMCc+JPu0bJ3mlf3z8DX56Ah3esX4=": "action_listen"
+  }
+}

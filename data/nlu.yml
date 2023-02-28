@@ -271,7 +271,7 @@ nlu:
       - [1. godina]{"entity": "student_study_year", "value": "1_diplomski"} godina diplomski
       - [1.]{"entity": "student_study_year", "value": "1_diplomski"} diplomski
       - [1 god]{"entity": "student_study_year", "value": "1_diplomski"}
-      - studiram na [1 godini ]{"entity": "student_study_year", "value": "1_diplomski"} diplomskog studija
+      - studiram na [1 godini]{"entity": "student_study_year", "value": "1_diplomski"} diplomskog studija
       - na [prvoj godini]{"entity": "student_study_year", "value": "1_diplomski"} diplomskog
       - [1 godina]{"entity": "student_study_year", "value": "1_diplomski"} diplomskog
       - na [1. god]{"entity": "student_study_year", "value": "1_diplomski"} diplomskog
@@ -283,12 +283,11 @@ nlu:
       - na [prvoj godini]{"entity": "student_study_year", "value": "1_diplomski"} diplomskog studija sam
       - na [prvoj god]{"entity": "student_study_year", "value": "1_diplomski"} diplomskog
       - student sam [prve]{"entity": "student_study_year", "value": "1_diplomski"} godine
-
       - [2]{"entity": "student_study_year", "value": "2_diplomski"} diplomski
       - [2. godina]{"entity": "student_study_year", "value": "2_diplomski"} godina diplomski
       - [2.]{"entity": "student_study_year", "value": "2_diplomski"} diplomski
       - [2 god]{"entity": "student_study_year", "value": "2_diplomski"}
-      - studiram na [2 godini ]{"entity": "student_study_year", "value": "2_diplomski"} diplomskog studija
+      - studiram na [2 godini]{"entity": "student_study_year", "value": "2_diplomski"} diplomskog studija
       - na [drugoj godini]{"entity": "student_study_year", "value": "2_diplomski"} diplomskog
       - [2 godina]{"entity": "student_study_year", "value": "2_diplomski"} diplomskog
       - na [2. god]{"entity": "student_study_year", "value": "2_diplomski"} diplomskog
@@ -300,7 +299,6 @@ nlu:
       - na [drugoj] godini{"entity": "student_study_year", "value": "2_diplomski"} diplomskog studija sam
       - na [drugoj] god{"entity": "student_study_year", "value": "2_diplomski"} diplomskog
       - student sam [druge]{"entity": "student_study_year", "value": "2_diplomski"} godine
-
       - [treca]{"entity": "student_study_year", "value": "3_preddiplomski"} godina preddiplomski
       - [treca]{"entity": "student_study_year", "value": "3_preddiplomski"} god prijediplomski
       - [3.]{"entity": "student_study_year", "value": "3_preddiplomski"} god prijediplomski
@@ -310,7 +308,7 @@ nlu:
       - na [trecoj]{"entity": "student_study_year", "value": "3_preddiplomski"} godini
       - [treca]{"entity": "student_study_year", "value": "3_preddiplomski"} preddiplomski
       - [treca]{"entity": "student_study_year", "value": "3_preddiplomski"} godina preddiplomskog studija
-      - [3 ]{"entity": "student_study_year", "value": "3_preddiplomski"} preddiplomski
+      - [3]{"entity": "student_study_year", "value": "3_preddiplomski"} preddiplomski
       - studiram na [trecoj]{"entity": "student_study_year", "value": "3_preddiplomski"} godini prediplomskog
       - na [3.]{"entity": "student_study_year", "value": "3_preddiplomski"} god preddiplomskog
       - na [3]{"entity": "student_study_year", "value": "3_preddiplomski"} god prijediplomskog studija informatike
