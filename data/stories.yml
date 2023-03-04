@@ -21,7 +21,7 @@ stories:
       - action: action_search_companies
       - action: utter_ask_for_projects
       - intent: deny
-      - action: utter_did_that_help
+      - action: utter_great_offer_more_help
 
   - story: studentska_prijava_na_projekt_prakse confirmation successful
     steps:

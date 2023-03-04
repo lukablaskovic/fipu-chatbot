@@ -14,6 +14,9 @@ nlu:
       - pozz
       - ej bok
       - ej cao
+      - hello
+      - hej
+      - ahoj
 
   - intent: goodbye
     examples: |
@@ -25,7 +28,7 @@ nlu:
       - bye bye
       - pozz
 
-  - intent: thank_and_goodbye
+  - intent: thanks_and_goodbye
     examples: |
       - hvala
       - hvala ti
@@ -342,7 +345,6 @@ nlu:
       - jesi ti robot
       - si robot
       - jesi li ti bot
-      - tko te je napravio
       - oktud si
       - tko si ti
       - sto si
@@ -354,6 +356,25 @@ nlu:
       - sa kime ja razgovaram
       - pricam li s covjekom ili robotom?
 
+  - intent: chitchat
+    examples: |
+      - šta radiš
+      - za koga radiš
+      - kako si
+      - sta se radi
+      - pada li vani kisa
+      - dali je zemlja okrugla
+      - je li vani hladno
+      - koji je danas dan
+      - koliko je sati
+      - hoce li sutra padati kiša
+      - danas je suncan dan
+      - imas li skripte
+      - tko je tebe napravio
+      - tko te napravio
+      - zasto sam upisao faks
+      - molim te reci mi koliko je sati
+      - zasto je nebo plavo
     #Sinonimi
   - synonym: tvrtka
     examples: |

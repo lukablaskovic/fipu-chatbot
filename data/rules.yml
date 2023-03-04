@@ -14,8 +14,8 @@ rules:
 
   - rule: When user thanks and wants to quit, offer more help to him
     steps:
-      - intent: thank_and_goodbye
-      - action: utter_thank_and_goodbye
+      - intent: thanks_and_goodbye
+      - action: utter_thanks_and_goodbye
 
   - rule: Say 'I am a bot' anytime the user challenges
     steps:
@@ -26,7 +26,12 @@ rules:
     steps:
       - action: utter_did_that_help
       - intent: affirm
-      - action: utter_great_im_still_here
+      - action: utter_great_offer_more_help
+
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
   #-----------------------------------------
   #General questions
   - rule: prijava_na_studij

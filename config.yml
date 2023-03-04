@@ -20,7 +20,7 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    constrain_similarities: true
+    constrain_similarities: True
     epochs: 100
   - name: EntitySynonymMapper
   - name: ResponseSelector
@@ -47,3 +47,6 @@ policies:
     epochs: 100
   - name: AugmentedMemoizationPolicy
   - name: RulePolicy
+    core_fallback_threshold: 0.4
+    core_fallback_action_name: "action_default_fallback"
+    enable_fallback_prediction: True
