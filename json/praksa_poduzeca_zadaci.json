@@ -3,98 +3,98 @@
     {
       "id": 1,
       "name": "Astronomija Višnjan",
-      "URL": "https://astro.hr/",
-      "zadaci": []
+      "website_URL": "https://astro.hr/",
+      "tasks": []
     },
     {
       "id": 2,
       "name": "AU Vidulini",
-      "URL": "http://vidulini-astro.hr/",
-      "zadaci": []
+      "website_URL": "http://vidulini-astro.hr/",
+      "tasks": []
     },
     {
       "id": 3,
       "name": "Cenosco Croatia",
-      "URL": "https://cenosco.com/",
-      "zadaci": []
+      "website_URL": "https://cenosco.com/",
+      "tasks": []
     },
     {
       "id": 4,
       "name": "CMGC d.o.o.",
-      "URL": "https://www.cmg.digital/",
-      "zadaci": []
+      "website_URL": "https://www.cmg.digital/",
+      "tasks": []
     },
     {
       "id": 5,
       "name": "Plus Hosting Grupa d.o.o.",
-      "URL": "https://www.plus.hr",
-      "zadaci": []
+      "website_URL": "https://www.plus.hr",
+      "tasks": []
     },
     {
       "id": 6,
       "name": "Express agencija d.o.o.",
-      "URL": "http://www.regionalexpress.hr/site/more/impressum",
-      "zadaci": []
+      "website_URL": "http://www.regionalexpress.hr/site/more/impressum",
+      "tasks": []
     },
     {
       "id": 7,
       "name": "FWD Grupa",
-      "URL": "http://fwd.hr",
-      "zadaci": []
+      "website_URL": "http://fwd.hr",
+      "tasks": []
     },
     {
       "id": 8,
       "name": "Geogrupa d.o.o.",
-      "URL": "https://geo-grupa.hr",
-      "zadaci": []
+      "website_URL": "https://geo-grupa.hr",
+      "tasks": []
     },
     {
       "id": 9,
       "name": "IN2 d.o.o.",
-      "URL": "https://in2.hr",
-      "zadaci": []
+      "website_URL": "https://in2.hr",
+      "tasks": []
     },
     {
       "id": 10,
       "name": "Infobip d.o.o.",
-      "URL": "https://infobip.com",
-      "zadaci": []
+      "website_URL": "https://infobip.com",
+      "tasks": []
     },
     {
       "id": 11,
       "name": "Infosit d.o.o.",
-      "URL": "https://www.infosit.com",
-      "zadaci": []
+      "website_URL": "https://www.infosit.com",
+      "tasks": []
     },
     {
       "id": 12,
       "name": "Intersoft Technologies d.o.o.",
-      "URL": "https://www.intersoft.uno",
-      "zadaci": []
+      "website_URL": "https://www.intersoft.uno",
+      "tasks": []
     },
     {
       "id": 13,
       "name": "A&R Carton Istra",
-      "URL": "https://www.ar-carton.com/en/",
-      "zadaci": []
+      "website_URL": "https://www.ar-carton.com/en/",
+      "tasks": []
     },
     {
       "id": 14,
       "name": "Infosit d.o.o.",
-      "URL": "https://www.infosit.com",
-      "zadaci": []
+      "website_URL": "https://www.infosit.com",
+      "tasks": []
     },
     {
       "id": 15,
       "name": "ISTRA TECH d.o.o.",
-      "URL": "http://www.istratech.hr",
-      "zadaci": []
+      "website_URL": "http://www.istratech.hr",
+      "tasks": []
     },
     {
       "id": 16,
       "name": "Lloyds Design d.o.o.",
-      "URL": "https://lloyds-design.com",
-      "zadaci": [
+      "website_URL": "https://lloyds-design.com",
+      "tasks": [
         {
           "id": 133,
           "code": "Zadatak 132",
@@ -127,122 +127,122 @@
     {
       "id": 17,
       "name": "Infosit d.o.o.",
-      "URL": "https://www.infosit.com",
-      "zadaci": []
+      "website_URL": "https://www.infosit.com",
+      "tasks": []
     },
     {
       "id": 18,
       "name": "Maistra d.d.",
-      "URL": "https://maistra.hr",
-      "zadaci": []
+      "website_URL": "https://maistra.hr",
+      "tasks": []
     },
     {
       "id": 19,
       "name": "Mijena d.o.o.",
-      "URL": "https://mijena.com",
-      "zadaci": []
+      "website_URL": "https://mijena.com",
+      "tasks": []
     },
     {
       "id": 20,
       "name": "Neo Lab d.o.o.",
-      "URL": "https://www.neolab.hr",
-      "zadaci": []
+      "website_URL": "https://www.neolab.hr",
+      "tasks": []
     },
     {
       "id": 21,
       "name": "Penta d.o.o.",
-      "URL": "https://www.penta.hr",
-      "zadaci": []
+      "website_URL": "https://www.penta.hr",
+      "tasks": []
     },
     {
       "id": 22,
       "name": "Pula Film Festival",
-      "URL": "https://www.pulafilmfestival.hr",
-      "zadaci": []
+      "website_URL": "https://www.pulafilmfestival.hr",
+      "tasks": []
     },
     {
       "id": 23,
       "name": "QiQo d.o.o.",
-      "URL": "http://qiqo.hr",
-      "zadaci": []
+      "website_URL": "http://qiqo.hr",
+      "tasks": []
     },
     {
       "id": 24,
       "name": "Spectral Core d.o.o.",
-      "URL": "https://www.spectralcore.com",
-      "zadaci": []
+      "website_URL": "https://www.spectralcore.com",
+      "tasks": []
     },
     {
       "id": 25,
       "name": "Superius d.o.o.",
-      "URL": "https://superius.co",
-      "zadaci": []
+      "website_URL": "https://superius.co",
+      "tasks": []
     },
     {
       "id": 26,
       "name": "Superius Idea d.o.o.",
-      "URL": "http://superiusidea.hr",
-      "zadaci": []
+      "website_URL": "http://superiusidea.hr",
+      "tasks": []
     },
     {
       "id": 27,
       "name": "Sysbee d.o.o.",
-      "URL": "https://www.sysbee.net",
-      "zadaci": []
+      "website_URL": "https://www.sysbee.net",
+      "tasks": []
     },
     {
       "id": 28,
       "name": "Red Martyr Entertainment",
-      "URL": "http://www.tanaisgames.com",
-      "zadaci": []
+      "website_URL": "http://www.tanaisgames.com",
+      "tasks": []
     },
     {
       "id": 29,
       "name": "Uniline d.o.o.",
-      "URL": "https://www.uniline.hr/croatia/",
-      "zadaci": []
+      "website_URL": "https://www.uniline.hr/croatia/",
+      "tasks": []
     },
     {
       "id": 30,
       "name": "Valamar d.d.",
-      "URL": "https://www.valamar.com",
-      "zadaci": []
+      "website_URL": "https://www.valamar.com",
+      "tasks": []
     },
     {
       "id": 31,
       "name": "TRI M d.o.o.",
-      "URL": "https://tri-m.hr",
-      "zadaci": []
+      "website_URL": "https://tri-m.hr",
+      "tasks": []
     },
     {
       "id": 32,
       "name": "NK Istra 1961 š.d.d.",
-      "URL": "https://nkistra.com",
-      "zadaci": []
+      "website_URL": "https://nkistra.com",
+      "tasks": []
     },
     {
       "id": 33,
       "name": "H.3 Solutions d.o.o.",
-      "URL": "https://www.h3.solutions/",
-      "zadaci": []
+      "website_URL": "https://www.h3.solutions/",
+      "tasks": []
     },
     {
       "id": 34,
       "name": "E.Studio d.o.o.",
-      "URL": "https://www.estudio.hr/",
-      "zadaci": []
+      "website_URL": "https://www.estudio.hr/",
+      "tasks": []
     },
     {
       "id": 35,
       "name": "AB-PROJEKT d.o.o.",
-      "URL": "",
-      "zadaci": []
+      "website_URL": "",
+      "tasks": []
     },
     {
       "id": 36,
       "name": "Fury Studios d.o.o.",
-      "URL": "https://rawfury.com/",
-      "zadaci": [
+      "website_URL": "https://rawfury.com/",
+      "tasks": [
         {
           "id": 150,
           "kontakt_email": "fury.studios@gmail.com",
@@ -261,44 +261,44 @@
     {
       "id": 37,
       "name": "LINK LAB j.d.o.o.",
-      "URL": "http://www.linklab.hr/",
-      "zadaci": []
+      "website_URL": "http://www.linklab.hr/",
+      "tasks": []
     },
     {
       "id": 38,
       "name": "UTE d.o.o.",
-      "URL": "",
-      "zadaci": []
+      "website_URL": "",
+      "tasks": []
     },
     {
       "id": 39,
       "name": "Tri plus grupa d.o.o.",
-      "URL": "",
-      "zadaci": []
+      "website_URL": "",
+      "tasks": []
     },
     {
       "id": 40,
       "name": "PLAY DIGITAL d.o.o.",
-      "URL": "https://www.playdigital.hr/",
-      "zadaci": []
+      "website_URL": "https://www.playdigital.hr/",
+      "tasks": []
     },
     {
       "id": 41,
       "name": "Institut Ruder Boskovic",
-      "URL": "irb.hr",
-      "zadaci": []
+      "website_URL": "irb.hr",
+      "tasks": []
     },
     {
       "id": 42,
       "name": "DAH Istra d.o.o.",
-      "URL": "",
-      "zadaci": []
+      "website_URL": "",
+      "tasks": []
     },
     {
       "id": 43,
       "name": "DPoslovi d.o.o.",
-      "URL": "https://www.dposlovi.com/",
-      "zadaci": [
+      "website_URL": "https://www.dposlovi.com/",
+      "tasks": [
         {
           "id": 111,
           "kontakt_email": "contact.me@gmail.com",

@@ -1,96 +1,96 @@
-# Import necessary Rasa libraries and modules
+import os
+from dotenv import load_dotenv
+
+from typing import Any, Text, Dict, List
+import pandas as pd
+import requests
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
 import json
 
-from typing import Any, Dict, List, Text
+load_dotenv()
 
-class ActionSearchCompanies(Action):
+class unipuAPI(object):
+
+    def __init__(self):
+        self.db = pd.read_json("json/praksa_poduzeca_zadaci.json")
+
+    def fetch_data(self):
+        return self.db
+
+    def format_data(self, df, header=True) -> Text:
+        return df.to_csv(index=False, header=header)
+
+unipu_API = unipuAPI()
+
+
+class ActionShowData(Action):
+
     def name(self) -> Text:
-        return "action_search_companies"
+        return "action_show_data"
 
-    def run(
-        self, 
-        dispatcher: CollectingDispatcher, 
-        tracker: Tracker, 
-        domain: Dict[Text, Any]
-    ) -> List[Dict[Text, Any]]:
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        companies = search_for_companies()
-        #print(companies)
-      
-        if companies:
-            company_names = "\n".join([f"{i+1}. {company['name']}" for i, company in enumerate(companies)])
-            dispatcher.utter_message(text=f"Popis poduzeća za obavljanje studentske prakse:\n{company_names}")
-       
-        else:
-            dispatcher.utter_message(text="Žao mi je, ne mogu pronaći ni jedno poduzeće za studentsku praksu.")
-            
-        return []
+        data = unipu_API.fetch_data()
 
-class ActionSearchProjects(Action):
-    def name(self) -> Text:
-        return "action_show_projects"
-    
-    @staticmethod
-    def is_int(string: Text) -> bool:
-        """Check if a string (company_id) is an integer."""
+        data_list = data["lista_poduzeca"]
+        readable = [(item["id"], item["name"]) for item in data_list]
 
-        try:
-            int(string)
-            return True
-        except ValueError:
-            return False
-    
-    def validate_company_id(
-        self,
-        id: Text,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) -> Dict[Text, Any]:
-        """Validate company_id value."""
-        company_id = int(id)
-        if company_id in get_companies_id():
-            return {"company_id": company_id}
-        else:
-            return {"company_id": None}
+        message = "\n".join([f"ID: {item[0]}, Name: {item[1]}" for item in readable])
 
-    def run(
-        self, 
-        dispatcher: CollectingDispatcher, 
-        tracker: Tracker, 
-        domain: Dict[Text, Any]
-    ) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(text=f"Izvolite listu dostupnih poduzeća za obavljanje prakse:\n\n{message}")
+
+        return [SlotSet("results", readable)]
+
+
+class ChatGPT(object):
+
+    def __init__(self):
+        self.url = "https://api.openai.com/v1/chat/completions"
+        self.model = "gpt-3.5-turbo"
+        self.headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {os.getenv('OPEN_AI_API')}"
+        }
+        self.prompt = "Answer the following request in Croatian language, based on the JSON data shown." \
+            "If asked for tasks (zadatak in Croatian) then please do following: First check whether provided company has available tasks. Second, if you found tasks, then provide details about them." \
+            "If you cannot find an answer, please say so'.\n\n"
         
-        company_id = tracker.get_slot("company_id")
-        validated_id = self.validate_company_id(company_id, dispatcher, tracker, domain)["company_id"]
-        print(validated_id)
-        if(validated_id):
-            projects = search_company_projects(company_id)
-            if projects:
-                project = "\n".join([f"\nZadatak {project['id']}:\n Kontakt email: {project['kontakt_email']}\n Opis zadatka: {project['opis_zadatka']}\n Preferirane tehnologije: {project['preferirane_tehnologije']}\n Preferencije za studenta: {project['student_preferencije']}\n Potrebno je imati: {project['potrebno_imati']}\n Trajanje: {project['trajanje_h']} sati\n Lokacija: {project['lokacija']}\n Željeno okvirno vrijeme početka: {project['okvirno_vrijeme_pocetka']}\n Angažman FIPU: {project['angazman_fipu']}\n Napomena: {project['napomena']}\n " for project in projects])
-                dispatcher.utter_message(text=f"Popis zadataka za odabranu tvrtku:\n\n{project}")
-            else:
-                dispatcher.utter_message(text="Za odabranu tvrtku nema definiranih zadataka. Međutim, možeš obavijestiti tvrtku da ga definira na: http://bit.ly/fipu-praksa-prijava-zadatka")
-        else:
-            dispatcher.utter_message(text="Unio si nepostojeći ID tvrtke. Molim te provjeri ponovo ili kontaktiraj administratora.")
-        return []
+    def ask(self, previous_results, question):
+        
+        data = unipu_API.fetch_data()
+        s_data = unipu_API.format_data(data, header=False)
+        print(s_data)   
+        
+        content  = self.prompt + "\n\n" + s_data + "\n\n" + question
+        body = {
+            "model":self.model, 
+            "messages":[{"role": "user", "content": content}]
+        }
+        result = requests.post(
+            url=self.url,
+            headers=self.headers,
+            json=body,
+        )
+        response = result.json()
+        print(response)
+        return result.json()["choices"][0]["message"]["content"]
+    
+chatGPT = ChatGPT()
+print(chatGPT.headers)
+class ActionDetail(Action):
+    def name(self) -> Text:
+        return "action_get_detail"
 
-def search_for_companies():
-  f = open("json_data/praksa_poduzeca_zadaci.json")
-  companies = json.load(f)
-  companies_list = [comp for comp in companies["lista_poduzeca"]]
-  return companies_list
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-def get_companies_id():
-    f = open("json_data/praksa_poduzeca_zadaci.json")
-    companies = json.load(f)
-    companies_id = [company["id"] for company in companies["lista_poduzeca"]]
-    return companies_id
+        previous_results = tracker.get_slot("results")
+        question = tracker.latest_message["text"]
+        answer = chatGPT.ask(previous_results, question)
+        dispatcher.utter_message(text = answer)
 
-def search_company_projects(id):
-    f = open("json_data/praksa_poduzeca_zadaci.json")
-    companies = json.load(f)
-    for company in filter(lambda c : c["id"] == int(id), companies["lista_poduzeca"]):
-        return company["zadaci"] if company["zadaci"] else None

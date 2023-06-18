@@ -1,102 +1,12 @@
 version: "3.1"
 
 rules:
-  #Basic greetings rules
-  - rule: Greet anytime the user says greets
+  - rule: show fipu
     steps:
-      - intent: greet
-      - action: utter_greet
+      - intent: search_poduzeca_praksa
+      - action: action_show_data
 
-  - rule: Say goodbye anytime the user says goodbye
+  - rule: get detail
     steps:
-      - intent: goodbye
-      - action: utter_goodbye
-
-  - rule: When user thanks and wants to quit, offer more help to him
-    steps:
-      - intent: thanks_and_goodbye
-      - action: utter_thanks_and_goodbye
-
-  - rule: Say 'I am a bot' anytime the user challenges
-    steps:
-      - intent: bot_challenge
-      - action: utter_iamabot
-
-  - rule: Offer more help to user once he finishes task
-    steps:
-      - action: utter_did_that_help
-      - intent: affirm
-      - action: utter_great_offer_more_help
-
-  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
-    steps:
-      - intent: nlu_fallback
-      - action: utter_please_rephrase
-  #-----------------------------------------
-  #General questions
-  - rule: prijava_na_studij
-    steps:
-      - intent: prijava_na_studij
-      - action: utter_prijava_na_studij
-
-  - rule: pocetak_upisa
-    steps:
-      - intent: pocetak_upisa
-      - action: utter_pocetak_upisa
-
-  - rule: studijski_programi_fipu
-    steps:
-      - intent: studijski_programi_fipu
-      - action: utter_studijski_programi_fipu
-
-  - rule: prijelaz_na_studij
-    steps:
-      - intent: prijelaz_na_studij
-      - action: utter_prijelaz_na_studij
-
-  - rule: priznavanje_ispita
-    steps:
-      - intent: priznavanje_ispita
-      - action: utter_priznavanje_ispita
-
-  - rule: prijava_zavrsnog_diplomskog
-    steps:
-      - intent: prijava_zavrsnog_diplomskog
-      - action: utter_prijava_zavrsnog_diplomskog
-
-  - rule: prijava_ispita
-    steps:
-      - intent: prijava_ispita
-      - action: utter_prijava_ispita
-
-  - rule: odjava_ispita
-    steps:
-      - intent: odjava_ispita
-      - action: utter_odjava_ispita
-
-  - rule: promjena_izbornog
-    steps:
-      - intent: promjena_izbornog
-      - action: utter_promjena_izbornog
-  #-----------------------------------------
-  #Praksa related
-
-  #Ask student his information when starting proces_prakse
-  #PROCESS: start_studentska_prijava_na_projekt_prakse
-  #FORM: studentska_prijava_na_projekt_prakse_form
-  - rule: Activate studentska_prijava_na_projekt_prakse_form
-    steps:
-      - intent: start_studentska_prijava_na_projekt_prakse
-      - action: studentska_prijava_na_projekt_prakse_form
-      - active_loop: studentska_prijava_na_projekt_prakse_form
-
-  - rule: Submit studentska_prijava_na_projekt_prakse_form
-    condition:
-      - active_loop: studentska_prijava_na_projekt_prakse_form
-    steps:
-      - action: studentska_prijava_na_projekt_prakse_form
-      - active_loop: null
-      - slot_was_set:
-          - requested_slot: null
-      - action: utter_submit_praksa_A
-      - action: utter_slots_values
+      - intent: detail
+      - action: action_get_detail

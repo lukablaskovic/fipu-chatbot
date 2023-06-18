@@ -1,218 +1,38 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - thankyou
-  - thanks_and_goodbye
-  - affirm
-  - deny
-  - prijava_na_studij
-  - pocetak_upisa
-  - studijski_programi_fipu
-  - prijelaz_na_studij
-  - priznavanje_ispita
-  - prijava_zavrsnog_diplomskog
-  - prijava_ispita
-  - odjava_ispita
-  - promjena_izbornog
-  - bot_challenge
-  - chitchat
-  # Praksa, poduzeca i zadaci
   - search_poduzeca_praksa
-  - start_studentska_prijava_na_projekt_prakse
-  - show_available_projects
-  - inform_student_study_year
+  - detail
 
 entities:
-  - student_JMBAG
-  - student_firstName
-  - student_lastName
-  - student_study_year
-  - company_id
-  - project_choice_1
-  - project_choice_2
-  - project_choice_3
-
-forms:
-  studentska_prijava_na_projekt_prakse_form:
-    ignored_intents:
-      - chitchat
-      - prijava_na_studij
-      - pocetak_upisa
-      - studijski_programi_fipu
-      - prijelaz_na_studij
-      - priznavanje_ispita
-      - prijava_zavrsnog_diplomskog
-      - prijava_ispita
-      - odjava_ispita
-      - promjena_izbornog
-      -
-    required_slots:
-      - student_JMBAG
-      - student_firstName
-      - student_lastName
-      - student_study_year
-      - project_choice_1
-      - project_choice_2
-      - project_choice_3
+  - company
 
 slots:
-  student_JMBAG:
+  results:
     type: text
-    influence_conversation: false
     mappings:
-      - type: from_text
-        entity: student_JMBAG
-        conditions:
-          - active_loop: studentska_prijava_na_projekt_prakse_form
-            requested_slot: student_JMBAG
-
-  student_firstName:
-    type: text
-    influence_conversation: true
-    mappings:
-      - type: from_text
-        entity: student_firstName
-        conditions:
-          - active_loop: studentska_prijava_na_projekt_prakse_form
-            requested_slot: student_firstName
-
-  student_lastName:
-    type: text
-    influence_conversation: true
-    mappings:
-      - type: from_text
-        entity: student_lastName
-        conditions:
-          - active_loop: studentska_prijava_na_projekt_prakse_form
-            requested_slot: student_lastName
-
-  student_study_year:
-    type: categorical
-    values:
-      - "3_preddiplomski"
-      - "1_diplomski"
-      - "2_diplomski"
-    influence_conversation: false
-    mappings:
-      - type: from_entity
-        entity: student_study_year
-        conditions:
-          - active_loop: studentska_prijava_na_projekt_prakse_form
-            requested_slot: student_study_year
-
-  project_choice_1:
-    type: text
-    influence_conversation: false
-    mappings:
-      - type: from_text
-        entity: project_choice_1
-        conditions:
-          - active_loop: studentska_prijava_na_projekt_prakse_form
-            requested_slot: project_choice_1
-
-  project_choice_2:
-    type: text
-    influence_conversation: false
-    mappings:
-      - type: from_text
-        entity: project_choice_2
-        conditions:
-          - active_loop: studentska_prijava_na_projekt_prakse_form
-            requested_slot: project_choice_2
-
-  project_choice_3:
-    type: text
-    influence_conversation: false
-    mappings:
-      - type: from_text
-        entity: project_choice_3
-        conditions:
-          - active_loop: studentska_prijava_na_projekt_prakse_form
-            requested_slot: project_choice_3
-
-  company_id:
-    type: text
-    influence_conversation: false
-    mappings:
-      - type: from_entity
-        entity: company_id
+      - type: custom
+        action: action_show_data
 
 responses:
-  #General communication
   utter_greet:
-    - text: "Pozdrav! Kako ti mogu pomoći?"
-    - text: "Bok! Kako ti mogu pomoći?"
-    - text: "Pozdrav! Pitaj me što te zanima i pokušat ću ti pomoći :)"
-  utter_goodbye:
-    - text: "Ako je to to, pozdrav! :-)"
-  utter_thanks_and_goodbye:
-    - text: "Nema problema! Lijep pozdrav!"
-    - text: "Molim, ako trebaš još nešto slobodno pitaj!"
-  utter_great_offer_more_help:
-    - text: "Ok, tu sam ako ti treba još nešto :)"
-    - text: "Okej, stojim ti na raspologanju :)"
+    - text: "Hey! How are you?"
+
   utter_did_that_help:
-    - text: "Jesi li dobio traženu informaciju? Ako ne, probaj me pitati opet."
-    - text: "Jesi li dobio zadovoljavajući odgovor? Ako ne, pitaj ponovo slobodno."
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
   utter_iamabot:
-    - text: "Bok, zovem se fipuBot. Cilj mi je olakšati tvoje studiranje na Fakultetu informatike :D"
-  utter_default:
-    - text: "Oprosti ali nisam razumio. Možeš li preformulirati?"
-  utter_please_rephrase:
-    - text: Žao mi je ali nisam sasvim razumio. Možeš li preformulirati pitanje?
+    - text: "I am a bot, powered by Rasa."
 
-  #General FIPU questions
-  utter_prijava_na_studij:
-    - text: "Prijave na studij se pokreću putem stranice www.postani-student.hr gdje se morate registrirati i odabrati željeni studijski program."
-  utter_pocetak_upisa:
-    - text: "Upisi počinju nakon objave konačnih rang listi, a prema rasporedu koji naknadno biti objavljen na stranici www.unipu.hr"
-  utter_studijski_programi_fipu:
-    - text: "Fakultet informatike u Puli pruža mogućnost upisa redovnog i online prijediplomskog i diplomskog studija informatike. Dodatno, diplomski studij se može upisati smjer Informatike i nastavnički smjer. Više informacija dostupno je na: https://fipu.unipu.hr/fipu/studijski_programi"
-  utter_prijelaz_na_studij:
-    - text: "Postupak prijelaza na neki od studijskih programa pokreće se putem zamolbe čiji obrazac je dostupan na poveznici https://www.unipu.hr/_download/repository/Obrazac-zamolba.pdf . Uz ispunjenu i vlastoručno potpisanu zamolbu morate dostaviti prijepis ocjena i silabuse svih položenih kolegija Uredu za studente i obrazovne programe na e-mail ured-za-studente@unipu.hr do 15. rujna tekuće akademske godine."
-  utter_priznavanje_ispita:
-    - text: "Priznavanje ispita pokreće se putem prijavnice za priznavanje ispita koja je dostupna na poveznici https://www.unipu.hr/_download/repository/Prijavnica_za_priznavanje_ispita.pdf . Prijavnicu morate ispuniti te zajedno sa prijepisom ocjena kojom dokazujete polaganje ispita predati predmetnom profesoru. Nakon što predmetni profesor potpisom potvrdi priznavanje ispita dužni ste prijavnicu poslati Uredu za studente i obrazovne programe poslati na e-mail: ured-za-studente@unipu.hr."
-  utter_prijava_zavrsnog_diplomskog:
-    - text: "U dogovoru sa mentorom birate temu završnog ili diplomskog rada. Nakon što izaberete temu morate popuniti obrazac za prijavu teme završnog ili diplomskog rada koji je dostupan na poveznici https://ffpu.unipu.hr/_download/repository/Obrazac_za_prijavu_teme_zavrsnog-diplomskog_rada.pdf . Prijavnicu mora potpisati mentor nakon čega se ista šalje na e-mail ured-za-studente@unipu.hr."
-  utter_prijava_ispita:
-    - text: "Ispite prijavljujete putem Studomata, najkasnije četiri dana prije definiranog ispitnog roka."
-  utter_odjava_ispita:
-    - text: "Ispite odjavljujete putem Studomata, najkasnije dva dana prije definiranog ispitnog roka."
-  utter_promjena_izbornog:
-    - text: "Izborne kolegije moguće je promijeniti unutar prva dva tjedna od početka nastave u zimskom i ljetnom semestru."
-
-  #studentska_prijava_na_projekt_prakse
-  utter_proces_prakse_start_confirm:
-    - text: "Zelis li zapoceti proces prijave zadataka za studentsku praksu?"
-  utter_ask_for_projects:
-    - text: "Možeš navesti i ID firme za koju želiš da ti pokažem dostupne zadatke. Ako želiš nešto specifično, molim obavijesti firmu da popune zadatak na [Prijava zadatka](http://bit.ly/fipu-praksa-prijava-zadatka)"
-  utter_ask_student_JMBAG:
-    - text: "Molim te napiši mi tvoj JMBAG."
-  utter_ask_student_firstName:
-    - text: "Molim te napiši mi tvoje ime."
-  utter_ask_student_lastName:
-    - text: "Molim te napiši mi tvoje prezime."
-  utter_ask_student_study_year:
-    - text: "Na kojoj si godini studija?"
-  utter_ask_project_choice_1:
-    - text: "Koji je tvoj prvi (1) odabir zadatka?"
-  utter_ask_project_choice_2:
-    - text: "Koji je tvoj drugi (2) odabir zadatka?"
-  utter_ask_project_choice_3:
-    - text: "Koji je tvoj treći (3) odabir zadatka?"
-  utter_submit_praksa_A:
-    - text: "Molim te potvrdi mi jesu li uneseni podaci ispravni prije nego pošaljem."
-  utter_submit_praksa_A_successful:
-    - text: "To je to, uspješno sam te prijavio na projekt prakse!"
-  utter_submit_praksa_A_unsuccessful:
-    - text: "Molim te započni ponovo proces prakse ukoliko ti neki podaci nisu točno uneseni ili si se predomislio."
-  utter_slots_values:
-    - text: "Tvoja prijavnica izgleda ovako: \n\nJMBAG: {student_JMBAG}\n Ime i prezime: {student_firstName} {student_lastName}\n Godina studija: {student_study_year}\n Prvi izbor: {project_choice_1}\n Drugi izbor: {project_choice_2}\n Treci izbor: {project_choice_3}\n"
 actions:
-  - action_search_companies
-  - action_show_projects
+  - action_show_data
+  - action_get_detail
 
 session_config:
   session_expiration_time: 60
