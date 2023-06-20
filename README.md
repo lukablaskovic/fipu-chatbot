@@ -56,6 +56,9 @@ rasa run actions
 rasa shell
 ```
 
+## Video demonstration
+https://www.youtube.com/watch?v=VqQtCIG_Wmw
+
 ## Customization
 The FIPU Chatbot is built on the flexible RASA framework, allowing for easy customization. 
 If you want to introduce more intents or enhance its functionality, modify the domain.yml, nlu.yml, and stories.yml files accordingly.
