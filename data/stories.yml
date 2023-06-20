@@ -1,3 +1,49 @@
 version: "3.1"
 
 stories:
+  - story: User asks for companies for practice
+    steps:
+      - intent: search_poduzeca_praksa
+      - action: action_show_data
+
+  - story: User asks for task details for company 3
+    steps:
+      - intent: tasks_details
+      - entities:
+          - company: 3
+      - action: action_get_details
+
+  - story: User asks for task details for IN2
+    steps:
+      - intent: tasks_details
+      - entities:
+          - company: "IN2"
+      - action: action_get_details
+
+  - story: User asks for task details for Infobip
+    steps:
+      - intent: tasks_details
+      - entities:
+          - company: "Infobip"
+      - action: action_get_details
+
+  - story: User asks for more information about Cenosco
+    steps:
+      - intent: tasks_details
+      - entities:
+          - company: "Cenosco"
+      - action: action_get_details
+
+  - story: User asks for web page of IN2 company
+    steps:
+      - intent: tasks_details
+      - entities:
+          - company: "IN2"
+      - action: action_get_details
+
+  - story: User asks for contact person for Superius
+    steps:
+      - intent: tasks_details
+      - entities:
+          - company: "Superius"
+      - action: action_get_details

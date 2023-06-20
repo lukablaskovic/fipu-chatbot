@@ -1,12 +1,12 @@
 version: "3.1"
 
 rules:
-  - rule: show fipu
+  - rule: get tasks_details
+    steps:
+      - intent: tasks_details
+      - action: action_get_details
+
+  - rule: get data
     steps:
       - intent: search_poduzeca_praksa
       - action: action_show_data
-
-  - rule: get detail
-    steps:
-      - intent: detail
-      - action: action_get_detail

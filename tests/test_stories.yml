@@ -1,0 +1,52 @@
+stories:
+  - story: test story 1 - User asks for companies for practice
+    steps:
+      - user: |
+          koja poduzeca za praksu su dostupna
+        intent: search_poduzeca_praksa
+      - action: action_show_data
+
+  - story: test story 2 - User asks for task details for company 3
+    steps:
+      - user: |
+          ima li dostupnih zadataka za firmu 3?
+        intent: tasks_details
+        entities:
+          - company: 3
+      - action: action_get_details
+
+  - story: test story 3 - User asks for task details for IN2
+    steps:
+      - user: |
+          zadaci za praksu za IN2
+        intent: tasks_details
+        entities:
+          - company: "IN2"
+      - action: action_get_details
+
+  - story: test story 4 - User asks for more information about Cenosco
+    steps:
+      - user: |
+          gdje mogu pronaći više informacija o Cenosco?
+        intent: tasks_details
+        entities:
+          - company: "Cenosco"
+      - action: action_get_details
+
+  - story: test story 5 - User asks for web page of IN2 company
+    steps:
+      - user: |
+          web stranica za firmu IN2
+        intent: tasks_details
+        entities:
+          - company: "IN2"
+      - action: action_get_details
+
+  - story: test story 6 - User asks for contact person for Superius
+    steps:
+      - user: |
+          tko je kontaktna osoba za poduzeće Superius?
+        intent: tasks_details
+        entities:
+          - company: "Superius"
+      - action: action_get_details

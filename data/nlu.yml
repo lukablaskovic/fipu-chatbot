@@ -24,13 +24,19 @@ nlu:
       - praksa - dostupne firme
       - kompanije koje su mi dostupne za praksu
 
-  - intent: detail
+  - intent: tasks_details
     examples: |
       - ima li dostupnih zadataka za firmu 3?
       - ima li zadataka za firmu 5?
       - tko je voditelj za firmu 16?
+      - pokazi mi zadatke za Infobip(company)
+      - zadaci za praksu za IN2(company)
       - pokaži mi URL za firmu 28
+      - gdje mogu pronaći više informacija o Cenosco(company)?
+      - gdje da nađem više informacija o firmi DPoslovi(company)?
+      - web stranica za firmu IN2(company)
       - pokaži mi zadatke za poduzeće Lloyds Digital(company)
+      - pokazi mi dostupne zadatke za praksu u poduzecu Superius(company)
       - daj mi zadatke za firmu IN2(company)
       - ima li dostupnih zadataka za Infobip(company)?
       - tko je kontaktna osoba za poduzeće Superius(company)?

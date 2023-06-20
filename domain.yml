@@ -1,8 +1,10 @@
 version: "3.1"
 
 intents:
-  - search_poduzeca_praksa
-  - detail
+  - search_poduzeca_praksa:
+      ignore_entities:
+        - company
+  - tasks_details
 
 entities:
   - company
@@ -31,8 +33,8 @@ responses:
     - text: "I am a bot, powered by Rasa."
 
 actions:
+  - action_get_details
   - action_show_data
-  - action_get_detail
 
 session_config:
   session_expiration_time: 60

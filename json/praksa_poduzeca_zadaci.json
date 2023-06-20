@@ -1,5 +1,5 @@
 {
-  "lista_poduzeca": [
+  "companies": [
     {
       "id": 1,
       "name": "Astronomija Višnjan",
@@ -96,20 +96,6 @@
       "website_URL": "https://lloyds-design.com",
       "tasks": [
         {
-          "id": 133,
-          "code": "Zadatak 132",
-          "kontakt_email": "lloyds.robert@gmail.com",
-          "opis_zadatka": "Pomoc u izradi prototipa za mob. aplikaciju",
-          "preferirane_tehnologije": "Figma, CSS",
-          "student_preferencije": "",
-          "potrebno_imati": "",
-          "trajanje_h": 100,
-          "lokacija": "remote",
-          "okvirno_vrijeme_pocetka": "1.1.2023",
-          "angazman_fipu": "",
-          "napomena": "praksa placena preko studentskog ugovora"
-        },
-        {
           "id": 122,
           "kontakt_email": "lloyds.ivan@gmail.com",
           "opis_zadatka": "Treba nam student koji ce re-dizajnirati sucenje web stranice jedne kompanije.",
@@ -140,7 +126,22 @@
       "id": 19,
       "name": "Mijena d.o.o.",
       "website_URL": "https://mijena.com",
-      "tasks": []
+      "tasks": [
+        {
+          "id": 133,
+          "code": "Zadatak 132",
+          "kontakt_email": "mijena.robert@gmail.com",
+          "opis_zadatka": "Pomoc u izradi prototipa za mob. aplikaciju",
+          "preferirane_tehnologije": "Figma, CSS",
+          "student_preferencije": "",
+          "potrebno_imati": "",
+          "trajanje_h": 100,
+          "lokacija": "remote",
+          "okvirno_vrijeme_pocetka": "1.1.2023",
+          "angazman_fipu": "",
+          "napomena": "praksa placena preko studentskog ugovora"
+        }
+      ]
     },
     {
       "id": 20,

@@ -4,16 +4,17 @@ language: hr
 
 pipeline:
   - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
-    analyzer: char_wb
+    analyzer: "char_wb"
     min_ngram: 1
     max_ngram: 4
-  - name: LogisticRegressionClassifier
+  - name: DIETClassifier
     epochs: 100
-  - name: FallbackClassifier
-    threshold: 0.3
-    ambiguity_threshold: 0.1
+    constrain_similarities: true
+  - name: EntitySynonymMapper
 policies:
   - name: MemoizationPolicy
   - name: RulePolicy
