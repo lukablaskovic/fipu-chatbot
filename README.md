@@ -1,6 +1,6 @@
 # FIPU chatbot
 
-<img src="https://fipu.unipu.hr/_news/icons/4de20a3c357bc3c8867a35ea220f4f9b8983_icon.jpg" width="350" height="200">
+<img src="./fipulab.jpg" width="350" height="200">
 
 The FIPU Chatbot 🤖 is AI-powered chatbot developed as part of the FIPU Lab research and development initiative at the Faculty of Informatics in Pula. 
 The chatbot employs the latest iteration of OpenAI's GPT-3.5-Turbo-0613 model with function calling capabilities and is built upon the RASA framework. 
